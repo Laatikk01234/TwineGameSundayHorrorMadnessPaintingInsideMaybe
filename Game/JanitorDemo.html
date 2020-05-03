@@ -359,7 +359,7 @@ if no knife:
 
 if knife, if no knife:
 
-[[&quot;What&#39;s wrong, Johnny?&quot;]]</tw-passagedata><tw-passagedata pid="30" name="Grab the knife from my pocket." tags="" position="354,3454.3333333333335" size="100,100">&quot;This is exciting! Let&#39;s have a duel. The winner takes the house! En garde!&quot;
+[[&quot;What&#39;s wrong, Johnny?&quot;]]</tw-passagedata><tw-passagedata pid="30" name="Grab the knife from my pocket." tags="" position="354,3454" size="100,100">&quot;This is exciting! Let&#39;s have a duel. The winner takes the house! En garde!&quot;
 
 Johnny suddenly lunges at me with his kitchen knife. There&#39;s something clumsy and childlike in his movements, like he was still just playing around.
 
@@ -376,11 +376,15 @@ He has a knife and I don&#39;t. The tools don&#39;t make for good enough weapons
 [[&quot;What&#39;s wrong, Johnny?&quot;]]</tw-passagedata><tw-passagedata pid="32" name="&quot;What&#39;s wrong, Johnny?&quot;" tags="" position="575,3658" size="100,100">&quot;Who does this house belong to?&quot;
 
 [[&quot;Of course it belongs to you.&quot;]]
-[[&quot;It&#39;s my home!&quot;]]</tw-passagedata><tw-passagedata pid="33" name="Stab Johnny." tags="" position="283,3588" size="100,100">I hit Johnny with my knife.
+[[&quot;It&#39;s my home!&quot;]]</tw-passagedata><tw-passagedata pid="33" name="Stab Johnny." tags="code" position="283,3588" size="100,100">stabbed
+
+I hit Johnny with my knife.
 
 I&#39;m sure I hit him.
 
 But nothing happens. It&#39;s like the blade only reaches air.
+
+My grip weakens and I drop the knife on the floor.
 
 &quot;Oh dear, what have you done? You just stabbed me! What if I had died?&quot;
 
@@ -403,11 +407,14 @@ Johnny starts juggling his knife.
 &quot;Don&#39;t let the door hit you on your way out! 
 There&#39;s a wide world out there for you to explore. Make the most out of it!&quot;
 
-[[Leave the house.]]</tw-passagedata><tw-passagedata pid="37" name="Leave the house." tags="code" position="454,4236" size="100,100">What the hell happened?
+[[Leave the house.]]</tw-passagedata><tw-passagedata pid="37" name="Leave the house." tags="code" position="455.6666666666667,4236" size="100,100">What the hell happened?
 
 I&#39;m still trembling from the encounter.
 
 I need to think about this.
+
+if knife, if no stab:
+I don&#39;t feel comfortable holding the knife anymore. I leave it in the van.
 
 [[Take a walk to cool my head.]]
 
@@ -587,7 +594,7 @@ Her eyes seem completely empty. It&#39;s like she&#39;s a walking corpse.
 
 I get creeped out.
 
-[[What was that?]]</tw-passagedata><tw-passagedata pid="60" name="&quot;Yeah, I am.&quot;" tags="code" position="689.3333333333334,5657" size="100,100">Silence. Then she asks:
+[[What was that?]]</tw-passagedata><tw-passagedata pid="60" name="&quot;Yeah, I am.&quot;" tags="code" position="689,5657" size="100,100">Silence. Then she asks:
 
 &quot;Do you like your job?&quot;
 
@@ -609,7 +616,7 @@ Gemma looks at the sky.
 
 &quot;I was a model back when I was young. After that, I got married and became a housewife. I never had to work again. I was interested in all sorts of things, but... I just never got around to following my dreams.&quot;
 
-[[&quot;It&#39;s not too late to do that, right?&quot;]]</tw-passagedata><tw-passagedata pid="62" name="&quot;It&#39;s not too late to do that, right?&quot;" tags="" position="696,5940.333333333333" size="100,100">Gemma looks at me bravely.
+[[&quot;It&#39;s not too late to do that, right?&quot;]]</tw-passagedata><tw-passagedata pid="62" name="&quot;It&#39;s not too late to do that, right?&quot;" tags="" position="696,5940" size="100,100">Gemma looks at me bravely.
 
 &quot;Well, I have lung cancer. The doctors said I only have a few months to live.&quot;
 
@@ -760,7 +767,7 @@ The pigeon lands.
 
 &quot;You wanna keep at it, punk!?&quot;
 
-[[&quot;No, that&#39;s enough.&quot;]]</tw-passagedata><tw-passagedata pid="80" name="&quot;Well, sorry. I was just trying to help.&quot;" tags="" position="733.6666666666666,7992.666666666666" size="100,100">&quot;Yeah, yeah. Don&#39;t start crying, it&#39;s disgusting.&quot;
+[[&quot;No, that&#39;s enough.&quot;]]</tw-passagedata><tw-passagedata pid="80" name="&quot;Well, sorry. I was just trying to help.&quot;" tags="" position="733,7992" size="100,100">&quot;Yeah, yeah. Don&#39;t start crying, it&#39;s disgusting.&quot;
 
 I do my best to ignore the bird.
 
@@ -845,7 +852,7 @@ That was a talking bird. Am I going insane? No, that wasn&#39;t the only weird t
 
 [[Time to think.]]</tw-passagedata><tw-passagedata pid="90" name="Possible init -&gt; atleast for sounds" tags="" position="1241,159" size="100,100">maybe init variables here?
 
-$variableList</tw-passagedata><tw-passagedata pid="91" name="What was that?" tags="" position="1266.6666666666667,2000.8333333333333" size="100,100">I quickly walk away from the police station. I&#39;m scared.
+$variableList</tw-passagedata><tw-passagedata pid="91" name="What was that?" tags="" position="1266,2000" size="100,100">I quickly walk away from the police station. I&#39;m scared.
 
 What did I just see? 
 
