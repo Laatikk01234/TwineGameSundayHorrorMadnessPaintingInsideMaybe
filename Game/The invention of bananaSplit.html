@@ -144,7 +144,7 @@ a:hover {
 }
 
 /* opacity */
-/* transition: 2s all ease * /</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="BackToTheFuture" color="gray"></tw-tag>,<tw-tag name="Ending" color="red"></tw-tag>,<tw-tag name="code" color="blue"></tw-tag><tw-passagedata pid="1" name="Main Menu" tags="" position="808,8" size="100,100">Janitor 2087
+/* transition: 2s all ease * /</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="BackToTheFuture" color="gray"></tw-tag>,<tw-tag name="Ending" color="red"></tw-tag>,<tw-tag name="code" color="blue"></tw-tag>,<tw-tag name="ending" color="red"></tw-tag><tw-passagedata pid="1" name="Main Menu" tags="" position="808,8" size="100,100">Janitor 2087
 
 [[Start Game]]
 
@@ -413,7 +413,7 @@ Johnny starts juggling his knife.
 &quot;Don&#39;t let the door hit you on your way out! 
 There&#39;s a wide world out there for you to explore. Make the most out of it!&quot;
 
-[[Leave the house.]]</tw-passagedata><tw-passagedata pid="37" name="Leave the house." tags="code" position="455.6666666666667,4236" size="100,100">What the hell happened?
+[[Leave the house.]]</tw-passagedata><tw-passagedata pid="37" name="Leave the house." tags="code" position="455,4236" size="100,100">What the hell happened?
 
 I&#39;m still trembling from the encounter.
 
@@ -565,7 +565,7 @@ I jump a bit.
 
 Is the pigeon talking?
 
-[[&quot;Did you just talk?&quot;]]</tw-passagedata><tw-passagedata pid="55" name="Ignore it." tags="" position="1449,7408" size="100,100">I keep eating my salad. The pigeon eventually walks away.
+[[&quot;Did you just talk?&quot;]]</tw-passagedata><tw-passagedata pid="55" name="Ignore it." tags="" position="1847.3333333333335,7326.333333333333" size="100,100">I keep eating my salad. The pigeon eventually walks away.
 
 I feel refreshed. It&#39;s time to get to the bottom of this.
 
@@ -579,7 +579,14 @@ The pigeon proudly struts towards me.
 
 &quot;What are you doing?&quot;
 
-[[&quot;I&#39;m just eating my salad.&quot;]]</tw-passagedata><tw-passagedata pid="57" name="Time to think." tags="" position="1492,9022" size="200,200">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="58" name="Go to the nearby police station." tags="" position="1208,1643" size="100,100">The station is nearby, so I decide to go there in person.
+[[&quot;I&#39;m just eating my salad.&quot;]]</tw-passagedata><tw-passagedata pid="57" name="Time to think." tags="" position="1373.6666666666667,8927" size="200,200">I finally feel like I can put things together and form a plan.
+
+First, I should look at all the weird things that have happened so far.  I have to be open-minded about this.
+
+When did it all start?
+
+[[When I came back home and Johnny was there.]]
+[[Before I came home.]]</tw-passagedata><tw-passagedata pid="58" name="Go to the nearby police station." tags="" position="1208,1643" size="100,100">The station is nearby, so I decide to go there in person.
 
 When I arrive, all the lights are off inside. I don&#39;t see anyone in the building.
 
@@ -850,15 +857,17 @@ The fact remains that a talking pigeon is standing in front of me.
 
 It might be connected to everything else.
 
-[[&quot;Do you know what&#39;s going on?&quot;]]</tw-passagedata><tw-passagedata pid="89" name="Leave the park." tags="" position="1538,8386" size="100,100">This bird is not worth the trouble. 
+[[&quot;Do you know what&#39;s going on?&quot;]]</tw-passagedata><tw-passagedata pid="89" name="Leave the park." tags="code" position="1538,8386" size="100,100">This bird is not worth the trouble. 
 
 I eat my salad while walking out of the park. 
 
 That was a talking bird. Am I going insane? No, that wasn&#39;t the only weird thing that has happened this evening. 
 
-[[Time to think.]]</tw-passagedata><tw-passagedata pid="90" name="Possible init -&gt; atleast for sounds" tags="" position="1241,159" size="100,100">maybe init variables here?
+[[Time to think.]]
 
-$variableList</tw-passagedata><tw-passagedata pid="91" name="What was that?" tags="" position="1266,2000" size="100,100">I quickly walk away from the police station. I&#39;m scared.
+left after talk pigeon</tw-passagedata><tw-passagedata pid="90" name="Possible init -&gt; atleast for sounds" tags="" position="1241,159" size="100,100">maybe init variables here?
+
+$variableList</tw-passagedata><tw-passagedata pid="91" name="What was that?" tags="code" position="1266,2000" size="100,100">I quickly walk away from the police station. I&#39;m scared.
 
 What did I just see? 
 
@@ -874,7 +883,605 @@ Still doesn&#39;t explain why I couldn&#39;t call 911. Damn.
 
 I push the incident away from my mind for now. I&#39;ve got a more pressing issue.
 
-[[Take a walk to cool my head.]]</tw-passagedata></tw-storydata>
+[[Take a walk to cool my head.]]
+
+police encounter done</tw-passagedata><tw-passagedata pid="92" name="When I came back home and Johnny was there." tags="code" position="1410.3333333333335,9573.666666666666" size="100,100">That&#39;s the main issue here. A stranger was living in my home when I got there. There was something off about Johnny...
+
+if johnny done
+
+He was definitely acting like he owned the place. But that can&#39;t be right. And then there was the episode in the cellar... I&#39;m not sure what to make of him. 
+
+I feel that an important thing here is whether he&#39;s actually been living there instead of me.
+
+[[I think he&#39;s actually living there.]]
+[[I think he&#39;s staged the situation after breaking in there.]]
+ 
+
+else
+
+[[I then visited the store.]]</tw-passagedata><tw-passagedata pid="93" name="Before I came home." tags="code" position="1658.6666666666667,9178.666666666666" size="100,100">add +2 deduction
+
+...That&#39;s right! 
+
+The painting! 
+
+It was such a small thing... but it has to be connected somehow. The dizziness I felt after touching it was strong and abnormal. 
+
+This must be the key. I should still go over the evening to make sure I don&#39;t miss anything.
+[[I went home and Johnny was there.-&gt;When I came back home and Johnny was there.]]</tw-passagedata><tw-passagedata pid="94" name="I think he&#39;s actually living there." tags="code" position="1223.6666666666667,9727" size="100,100">add +1 deduction
+
+While logically it doesn&#39;t make sense that we&#39;re living in the same apartment without knowing about each other, I don&#39;t think he staged anything. The differences inside the house were too thorough.
+
+How is this possible?
+
+[[I&#39;ve travelled in time.]]
+[[I&#39;m in another dimension.]]
+[[I&#39;m dreaming.]]</tw-passagedata><tw-passagedata pid="95" name="I think he&#39;s staged the situation after breaking in there." tags="" position="1373.6666666666667,9727" size="100,100">I know I&#39;m living there, not him. He&#39;s messing with me by making the apartment look different and by acting weird. What a psycho.
+
+[[I then visited the store.]]</tw-passagedata><tw-passagedata pid="96" name="I then visited the store." tags="code" position="1495.3333333333335,10080.333333333334" size="100,100">if gemma encounter done
+
+Gemma seemed relatively normal, though maybe she also knew more than she wanted to let on? She talked about herself alot...
+
+if gemma encounter done, if johnny encounter done
+
+Does something connect her to Johnny?
+
+[[They must be relatives.]]
+[[They must be friends.]]
+[[They both brought up my job.]]
+
+else
+
+I don&#39;t think I got any new information at the store, except that the clerk was different.
+
+[[Then I went to the park.]]</tw-passagedata><tw-passagedata pid="97" name="I&#39;ve travelled in time." tags="" position="1073.6666666666667,9877" size="100,100">Maybe I&#39;ve travelled in time, and this world in which Johnny is living in my house is the past or the future. 
+
+Then again, I don&#39;t really see too many differences in the suburb. The streets and the store felt normal...
+
+I don&#39;t know about this.
+
+[[I then visited the store.]]</tw-passagedata><tw-passagedata pid="98" name="I&#39;m in another dimension." tags="code" position="1223.6666666666667,9877" size="100,100">add +1 deduction
+
+I think that&#39;s it. This is a parallel universe. People are different and I&#39;ve been replaced as the house&#39;s owner. 
+
+That&#39;s crazy, but it&#39;s the most logical conclusion I can reach.
+
+[[I then visited the store.]]</tw-passagedata><tw-passagedata pid="99" name="I&#39;m dreaming." tags="" position="1372,9877" size="100,100">Maybe I&#39;ve just been dreaming all this time? Does that make sense? 
+
+I&#39;m not so sure about that...
+
+[[I then visited the store.]]</tw-passagedata><tw-passagedata pid="100" name="Then I went to the park." tags="code" position="1455.3333333333335,10477" size="100,100">if pigeon encounter done
+
+There was a talking, foul-mouthed pigeon. First of all, talking birds are not supposed to exist, but it also told me a lot about my situation. What did I learn again?
+
+[[That I&#39;m trapped.]]
+[[That I&#39;m free as a bird.]]
+[[That I&#39;m going to die.]]
+
+else
+
+I just ate my salad. Nothing peculiar there.
+
+if left after talk pigeon
+
+There was a talking, foul-mouthed pigeon. That was really weird. Birds aren&#39;t supposed to talk, so what&#39;s going on? Maybe I&#39;ve gone crazy.
+
+[[Is that all?]]</tw-passagedata><tw-passagedata pid="101" name="They must be relatives." tags="" position="1273.6666666666667,10227" size="100,100">Is that it? I don&#39;t really have any evidence of that...
+
+[[Then I went to the park.]]</tw-passagedata><tw-passagedata pid="102" name="They must be friends." tags="" position="1388.6666666666667,10228.666666666666" size="100,100">Maybe they&#39;re friends? Is there any evidence, though...?
+
+[[Then I went to the park.]]</tw-passagedata><tw-passagedata pid="103" name="They both brought up my job." tags="code" position="1548.6666666666665,10225.333333333334" size="100,100">add +1 deduction
+
+They both asked if I&#39;m happy working as a janitor. It sure is a tricky question...
+
+The connection is not strong, but I think they both were serious when talking about it with a stranger they just met. I should keep this in mind.
+
+[[Then I went to the park.]]</tw-passagedata><tw-passagedata pid="104" name="Is that all?" tags="code" position="1450.3333333333335,10837.000000000002" size="100,100">if police encounter done
+
+I can&#39;t forget about what happened at the police station. The woman in there was so creepy. Did I learn something important from that encounter?
+
+[[I can probably reach the police if I try again tomorrow.]]
+[[I can&#39;t reach the police.]]
+
+else
+
+Nothing else comes to mind. 
+
+[[I think that&#39;s all.]]</tw-passagedata><tw-passagedata pid="105" name="That I&#39;m trapped." tags="code" position="1253.6666666666667,10622" size="100,100">add +1 deduction
+
+Right. I think it meant that I&#39;m trapped in a metaphysical sense, since it feels like I can move around the streets normally.
+
+It also said that there might be way to save myself. That gives me hope, but I still need to figure out how to do that.
+
+[[Is that all?]]</tw-passagedata><tw-passagedata pid="106" name="That I&#39;m free as a bird." tags="" position="1520.3333333333335,10625.333333333334" size="100,100">Wait, did it say that? All this information is hard to process...
+
+Oh well, moving on.
+
+[[Is that all?]]</tw-passagedata><tw-passagedata pid="107" name="That I&#39;m going to die." tags="" position="1682,10628.666666666668" size="100,100">The bird said something about dying. Was it threatening me? I should have paid more attention.
+
+It&#39;s probably not important.
+
+[[Is that all?]]</tw-passagedata><tw-passagedata pid="108" name="I can probably reach the police if I try again tomorrow." tags="" position="1375.3333333333335,10987.000000000002" size="100,100">It was all just a bunch of weird coincidences. I&#39;m sure I can reach them tomorrow when the office opens. And I should probably get my phone fixed.
+
+Spending the night at a park doesn&#39;t sound too enticing, though... I need to resolve the situation.
+
+[[I think that&#39;s all.]]</tw-passagedata><tw-passagedata pid="109" name="I can&#39;t reach the police." tags="code" position="1552.0000000000002,10990.333333333336" size="100,100">deduction +1
+
+I can&#39;t call them, I can&#39;t visit the station even though it should be open... and I even see something scary that makes me want to give up on reaching the police.
+
+It&#39;s almost as if... something wants to keep me away from officials. 
+
+Or maybe the police are just gone somehow.
+
+[[I think that&#39;s all.]]</tw-passagedata><tw-passagedata pid="110" name="I think that&#39;s all." tags="" position="1458.6666666666667,11192.000000000002" size="100,100">if deduction 5 or higher
+
+I feel like I&#39;m starting to see the whole picture. Now I need to choose what to do.
+
+[[Go home.]]
+[[Go to the auction house.]]
+
+
+else
+
+Damn it! 
+
+I feel like I have some information, but I can&#39;t really make out the connections. I wish I had been more thorough.
+
+Then again, maybe I don&#39;t need to know everything. I&#39;m a practical person, after all. I just need to take back my house. I&#39;m sure I can do it this time. Maybe the psycho has already left?
+
+[[Go home.-&gt;Go home.(bad)]]</tw-passagedata><tw-passagedata pid="111" name="Go home.(bad)" tags="" position="1928.666666666667,11435.333333333336" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="112" name="Go home." tags="" position="982.0000000000001,11443.666666666668" size="100,100">I think I should try going home again. It might not work, but at least Johnny is there. I think contact with him might lead to something.
+
+I get to my door and knock on it. After a few seconds, a familiar face appears.
+
+[[&quot;Hey there.&quot;]]</tw-passagedata><tw-passagedata pid="113" name="Go to the auction house." tags="" position="1465.3333333333335,11715.333333333334" size="100,100">That&#39;s right, the auction house. Where all of this started.
+
+I need to find that painting. It must be what triggered all this madness. I&#39;m not entirely sure what I should do with it, but I&#39;ve still got some tools left in the van. 
+
+It&#39;s a few miles from here, so I should drive there.
+
+[[Go get the van.-&gt;Go to the van.]]</tw-passagedata><tw-passagedata pid="114" name="&quot;Hey there.&quot;" tags="" position="982.0000000000001,11593.666666666668" size="100,100">&quot;Hey, buddy! Back so soon? Did you figure things out already?&quot;
+
+He seems to be on top of the situation as always. 
+
+[[&quot;Yes, I think so.&quot;]]
+
+</tw-passagedata><tw-passagedata pid="115" name="&quot;Yes, I think so.&quot;" tags="" position="982.0000000000001,11743.666666666668" size="100,100">&quot;Well I&#39;m delighted to hear that! You&#39;re as bright as all those lightbulbs you&#39;ve changed as a janitor.&quot;
+
+He actually seems happy.
+
+&quot;But why are you here? I you know what&#39;s the cause of your situation, shouldn&#39;t you be at the wheel right now?&quot;
+
+[[&quot;I figured we could talk before I go.&quot;]]</tw-passagedata><tw-passagedata pid="116" name="&quot;I figured we could talk before I go.&quot;" tags="" position="982.0000000000001,11893.666666666668" size="100,100">He thinks for a moment.
+
+&quot;No, I don&#39;t want that. I&#39;ve planned quite a lot for you, and it would be rude of you to miss it.&quot;
+
+What&#39;s he talking about?
+
+One thing&#39;s for sure: he&#39;s playing with me and he&#39;s enjoying it.
+
+&quot;Well, drive safely!&quot;
+
+Before I can get a word in edgewise, he slams the door shut.
+
+Time to head out to the auction house.
+
+[[Go to the van.]]</tw-passagedata><tw-passagedata pid="117" name="Go to the van." tags="" position="1260.3333333333335,12168.666666666668" size="100,100">I start up the engine and roll out of the parking lot. It feels like I haven&#39;t driven this for a long time, though it&#39;s only been a few hours. 
+
+At least I think so. If the thing that&#39;s keeping me here can manipulate everything, I can&#39;t really trust my sense of time. Or any other sense, for that matter.
+
+The streets feel empty. I don&#39;t see signs of anyone. That&#39;s weird.
+
+It suddenly gets very cloudy. Is it going to rain?
+
+After about a mile of driving, I see something on the road.
+
+It&#39;s a string of cars that make up a huge roadblock. They&#39;re all empty.
+
+What&#39;s going on?
+
+[[Find another way.]]
+</tw-passagedata><tw-passagedata pid="118" name="Find another way." tags="" position="1253.6666666666667,12312.000000000002" size="100,100">After a few U-turns and intersections, I&#39;m again heading towards my workplace. 
+
+Was the roadblock made for me?
+
+After a few minutes, the answer becomes clear. There&#39;s another roadblock, even larger than before. 
+
+Damn! These two roads were the only ones nearby that I could use.
+
+I think about this. 
+
+Since huge roadblocks seem to be no problem for the thing that&#39;s playing with me, there are probably more of them on other roads. I can&#39;t get through.
+
+[[Exit the van and start walking.]]</tw-passagedata><tw-passagedata pid="119" name="Exit the van and start walking." tags="" position="1253.6666666666667,12462.000000000002" size="100,100">There should be just under a mile left. I can walk on foot. 
+
+An eerie thought enters my head. Am I not being steered towards walking with all these roadblocks?
+
+It doesn&#39;t matter. I have to do this. 
+
+I pass a few of the cars and vault over others. Eventually I make it through the roadblock. It must have been a couple hundred feet long.
+
+The road takes me between tall buildings. I feel a bit claustrophobic. 
+
+It&#39;s very weird walking in completely empty streets when they&#39;re usually buzzling with people. Now I don&#39;t even hear the sound of birds.
+
+My senses make be turn around. Something moves rapidly, but disappears before I can make out what it is. 
+
+I keep walking towards the auction house, this time much faster. I need to reach it quickly.
+
+I feel the atmosphere changing.
+
+[[The sky...?]]
+</tw-passagedata><tw-passagedata pid="120" name="The sky...?" tags="" position="1253.6666666666667,12612.000000000002" size="100,100">The clouds move away from above me. They abnormally go in opposite directions. Wind doesn&#39;t work that way.
+
+The sky that is revealed is crimson.
+
+I&#39;m shocked. When will this end?
+
+Only a bit longer. I decide to take a shortcut.
+
+[[Enter the alley.]]</tw-passagedata><tw-passagedata pid="121" name="Enter the alley." tags="code" position="1253.6666666666667,12762.000000000002" size="100,100">The alley would normally be dark, but now everything is basking in red.
+
+I feel disconnected from reality. Then again, maybe this isn&#39;t reality at all? 
+
+Disturbing thoughts enter my head. If this isn&#39;t real, can I even die? Should I... try it? I glance at the broken shards of a glass bottle.
+
+No! I need to stay focused.
+
+Stay sane.
+
+Stay sane.
+
+I take a turn in the alley. In front of me is the corpse of an old lady.
+
+if gemma done
+[[&quot;Gemma...?&quot;]]
+
+else
+[[Oh god...!-&gt;&quot;Gemma...?&quot;]]
+
+
+</tw-passagedata><tw-passagedata pid="122" name="&quot;Gemma...?&quot;" tags="" position="1253.6666666666667,12912.000000000002" size="100,100">Despite the same color being everywhere, I can recognize the fluid next to the corpse. The smell is so strong I want to puke.
+
+How did this happen? 
+
+No, don&#39;t think about it. Just go!
+
+I run past the corpse. It feels wrong, but I&#39;m absolutely terrified. The same thing might happen to me.
+
+After a few more turns, I finally reach a familiar plaza. The auction house is at the middle. But there&#39;s much more.
+
+[[Oh no...]]</tw-passagedata><tw-passagedata pid="123" name="Oh no..." tags="" position="1253.6666666666667,13062.000000000002" size="100,100">The plaza is swarming with people. They are all stiff, standing there looking at the auction house. They form an orderly ring around it with no gaps. There must be thousands of them.
+
+There&#39;s also a pigeon flying in circles overhead.
+
+I almost run back to the alley instinctively until I remember the corpse in there.  
+
+My head&#39;s spinning. I&#39;ve been through so much today, it feels like I&#39;m going to burst. 
+
+The people don&#39;t seem to react to my presence even though there&#39;s only a distance of about 50 feet between us. The pigeon is now circling closer to my location. It must be watching me. 
+
+I suppose this is the final test. 
+
+I take a few deep breaths. I hope they&#39;re not my last ones.
+
+[[Charge through the swarm of people.]]</tw-passagedata><tw-passagedata pid="124" name="Charge through the swarm of people." tags="" position="1253.6666666666667,13212.000000000002" size="100,100">As I make contact with the people standing at the outer edge of the ring, I get repulsed. They luckily don&#39;t smell like the corpse in the alley, but it feels like I&#39;m infiltrating a group of marionettes as their limbs waddle to give way to me. They look like people, but they&#39;re more like dolls. There&#39;s something fundamentally wrong about them.
+
+I make sure not to look at their faces. I&#39;m better off not knowing what they look like up close.
+
+...
+...
+
+After an agonising moment, I make it to the building. I feel the eyes of thousands of mindless husks glued to me. 
+
+It doesn&#39;t matter. I made it. 
+
+I run to the door. It&#39;s open!
+
+[[Enter the auction house.]]</tw-passagedata><tw-passagedata pid="125" name="Enter the auction house." tags="" position="1253.6666666666667,13362.000000000002" size="100,100">The familiar hallways almost calm me, but the crimson light shining in from the windows reminds me that it&#39;s not over. 
+
+I get to the main hall. The lights are on.
+
+Up there, on the stage, is my objective.
+
+The painting.
+
+[[Approach the painting.]]</tw-passagedata><tw-passagedata pid="126" name="Approach the painting." tags="" position="1253.6666666666667,13512.000000000002" size="100,100">There it is. Finally.
+
+I examine it. It&#39;s just like I left it: standing straight.
+
+I feel that the contents of the painting have changed somehow. 
+
+It feels a bit darker... and were the lights of the suburb on before?
+
+They seem to form a face.
+
+The moment I notice this, I hear a voice. A playful, shrill voice that has some familiar qualities. 
+
+&quot;You made it!&quot;
+
+The hall&#39;s lights turn off. It feels like me and the painting are the only ones in the world.
+
+[[&quot;Yes, I did. But you didn&#39;t make it easy.&quot;]]</tw-passagedata><tw-passagedata pid="127" name="&quot;Yes, I did. But you didn&#39;t make it easy.&quot;" tags="" position="1255.3333333333335,13660.333333333336" size="100,100">&quot;Of course I didn&#39;t! I wanted this to last as long as possible. Did you enjoy it?&quot;
+
+I feel very, very angry. I use all my willpower to ignore the question.
+
+&quot;The look on your face! I wish I was a mirror instead of a painting.&quot;
+
+I calm myself by thinking of it as a child. A cruel, powerful child, but a child nonetheless. 
+
+&quot;I guess you have some questions? Or do you want to end this already? Oh! Maybe you want to stay here and play with me!&quot;
+
+[[Ask a question.-&gt;Ask another question.]]</tw-passagedata><tw-passagedata pid="128" name="Ask another question." tags="" position="1255.3333333333335,13812.000000000002" size="100,100">[[&quot;What exactly are you?&quot;]]
+[[&quot;How did this happen?&quot;]]
+[[&quot;Why are you doing this?&quot;]]
+[[&quot;Who are the other people?&quot;]]
+[[&quot;What is this place?&quot;]]
+[[&quot;What happens to you if the painting is destroyed?&quot;]]
+[[&quot;Why aren&#39;t you keeping me trapped any longer?&quot;]]
+[[&quot;How could you toy with me like that?&quot;]]
+[[&quot;No more questions.&quot;]]</tw-passagedata><tw-passagedata pid="129" name="&quot;What exactly are you?&quot;" tags="" position="765.3333333333335,13957.000000000002" size="100,100">&quot;Ooh, you&#39;re interested in me? I&#39;m flattered!&quot;
+
+It doesn&#39;t have facial expressions, so I can&#39;t tell if it&#39;s being sarcastic or not.
+
+&quot;I&#39;m a magical painting, but I suppose that&#39;s obvious by now. I was painted... hmmm... a week ago, maybe? It&#39;s really hard to keep track of time, what with the parallel worlds and all that.&quot;
+
+&quot;I was born, or created, with the special ability to see into souls and put them inside me. Pretty cool, huh? Oh, but please don&#39;t give credit to my painter. I don&#39;t think this was intended.&quot;
+
+[[&quot;What happened to the painter?&quot;]]</tw-passagedata><tw-passagedata pid="130" name="&quot;How did this happen?&quot;" tags="" position="898.6666666666669,13963.666666666668" size="100,100">&quot;You straightened me, remember? What were you thinking?&quot;
+
+In hindsight, that was a huge mistake. But that&#39;s what I do. I&#39;m a pedantic janitor who takes their job seriously. I couldn&#39;t know this would happen.
+
+&quot;So that was the physical contact required for me to trap your soul. I don&#39;t think just anyone would have touched me in the same situation. Don&#39;t you think you&#39;re special?&quot;
+
+...
+
+&quot;When you thought you were normally driving home, you were already in my world. What a twist, huh?&quot;
+
+[[Ask another question.]]</tw-passagedata><tw-passagedata pid="131" name="&quot;Why are you doing this?&quot;" tags="" position="1030.3333333333335,13962.000000000002" size="100,100">&quot;Well, for one, I&#39;m super bored. Can you imagine what it&#39;s like to sit around, being pretty and getting auctioned off like trash? I&#39;m sure any painting that had abilities like me would also spice up their lives.&quot;
+
+I don&#39;t think paintings are supposed to have &#39;lives&#39;...
+
+&quot;So I wanted to give us both an unforgettable experience! I tried my best, so I hope you weren&#39;t too disappointed.&quot;
+
+Is this thing serious? I&#39;m amazed I&#39;m still sane after all of that.
+
+&quot;You were also very interesting. There&#39;s just something about your soul... I figured we could learn from each other.&quot;
+
+[[Ask another question.]]</tw-passagedata><tw-passagedata pid="132" name="&quot;Who are the other people?&quot;" tags="code" position="1158.6666666666667,13962.000000000002" size="100,100">&quot;Well, the things outside are just creations I didn&#39;t really think too much about. None of them are real, mind you. I just wanted to use them for effect. Other than that, there were three beings I separated my personality into. Field agents, if you will.&quot;
+
+if johnny done
+
+&quot;Johnny is someone I might be if I was a middle-aged man. Sitting in your home, drinking beer, listening to rock... that&#39;s the life! Do what you want, when you want. No one to bring you down.&quot;
+
+Adult life is not that simple... but I suppose the painting doesn&#39;t know that.
+
+&quot;He played the role of your counterpart. I wanted to give you a big surprise when you went home, so I planted him there.&quot;
+
+if gemma done
+&quot;Gemma was a bit more nuanced. Her having been a model reflects the state of being a painting quite well. Through her, I tried to talk to you about what I deemed important in your life.&quot;
+
+My life? What&#39;s it referring to?
+
+&quot;Oh, and she seemed to like you a bit too much. Gemma didn&#39;t really like the grand finale I had planned for you, so she tried to protest. Well, I got rid of her and even used her to shock you even more! Ironic, isn&#39;t it.&quot;
+
+I stare daggers at the painting.
+
+&quot;Don&#39;t look at me like that. I can do what I want to my personalities!&quot;
+
+if pigeon done
+
+&quot;The pigeon represents my rebellious thoughts. Sometimes you just want to flip the bird, you know? Hmm, maybe you don&#39;t. Anyway, I got worried you wouldn&#39;t piece things out well enough, so I dropped some coherent hints with the bird. It also served as my eyes when you weren&#39;t talking to Johnny or Gemma.&quot;
+
+[[Ask another question.]]</tw-passagedata><tw-passagedata pid="133" name="&quot;What is this place?&quot;" tags="" position="1392.0000000000002,13973.666666666668" size="100,100">&quot;This is a parallel world. I&#39;ve constructed it to the best of my ability, just for you! Souls contain lots of information if you know where to look. And for parts I&#39;m not sure about, I just fill them in with something that&#39;s close enough.&quot;
+
+I remember the weird brand names and the clerk.
+
+&quot;And, as you could probably tell, I&#39;m in total control. I haven&#39;t even tried everything yet! Maybe I could try moving the whole planet... Oh, right. I&#39;ve only designed this part of the world, since I figured you wouldn&#39;t wander too far. If you had, I&#39;d have created things on the fly. That might have gotten weird though.&quot;
+
+[[Ask another question.]]
+
+</tw-passagedata><tw-passagedata pid="134" name="&quot;What happens to you if the painting is destroyed?&quot;" tags="" position="1542.0000000000002,13973.666666666668" size="100,100">&quot;You mean in the real world? Well, probably the same thing that happens to humans when they die. Is there life after death? Who knows.&quot;
+
+I think about this for a few seconds.
+
+&quot;Why do you ask?&quot;
+
+...
+
+[[Ask another question.]]</tw-passagedata><tw-passagedata pid="135" name="&quot;Why aren&#39;t you keeping me trapped any longer?&quot;" tags="" position="1692.0000000000002,13983.666666666668" size="100,100">&quot;Well, you&#39;ve been through a lot in a short span of time. I think you&#39;ll soon be at your limit. I don&#39;t want to spoil your soul with too much baggage.&quot;
+
+&quot;And to be honest, you&#39;ve done really well to make it this far! It&#39;s pretty apparent that you want to go home, and you deserve a reward. I&#39;m not completely selfish, you know.&quot;
+
+[[Ask another question.]]
+
+</tw-passagedata><tw-passagedata pid="136" name="&quot;No more questions.&quot;" tags="" position="2012.0000000000002,13972.000000000002" size="100,100">&quot;I hope your curiosity is sated! It&#39;s the same curiosity that made you approach me in the first place, after all.&quot;
+
+&quot;But before you go, I want to tell you something. One last thing.&quot;
+
+[[&quot;What is it?&quot;]]
+
+</tw-passagedata><tw-passagedata pid="137" name="&quot;How could you toy with me like that?&quot;" tags="" position="1273.666666666667,13967.000000000002" size="100,100">&quot;I thought you&#39;d enjoy it. I mean, isn&#39;t fear a good emotion to feel?&quot;
+
+[[I didn&#39;t enjoy it one bit.]]</tw-passagedata><tw-passagedata pid="138" name="&quot;What happened to the painter?&quot;" tags="" position="765.3333333333335,14107.000000000002" size="100,100">&quot;Well, I quess they realized something was weird about me. They quickly wrapped me in paper and gave me to an auction house. Can you believe it? I&#39;m probably the world&#39;s only painting with actual powers and I&#39;m not worth even 50 pennies?&quot;
+
+&quot;Anyway, I can only see things that are really close to me. And the soul-trapping thingy only works for those that touch me. The painter and the professor seemed really boring, so I didn&#39;t bother with them. You, on the other hand...&quot;
+
+[[Ask another question.]]</tw-passagedata><tw-passagedata pid="139" name="I didn&#39;t enjoy it one bit." tags="" position="1275.3333333333337,14098.666666666668" size="100,100">&quot;Why do people watch horror movies? They want to feel something. You wouldn&#39;t get experiences like this anywhere in real life, I assure you.&quot;
+
+Well, I certainly felt alot.
+
+[[But you forced me into this!]]</tw-passagedata><tw-passagedata pid="140" name="But you forced me into this!" tags="" position="1273.6666666666672,14232.000000000002" size="100,100">The painting is silent for a moment.
+
+&quot;When I looked into your soul, I just felt that we had a connection. I had to trap you here so we could have fun. I was afraid it would be my only chance, and I took it.&quot;
+
+&quot;I&#39;m... sorry if I upset you.&quot;
+
+[[Ask another question.]]</tw-passagedata><tw-passagedata pid="141" name="&quot;What is it?&quot;" tags="" position="2012.0000000000002,14122.000000000002" size="100,100">&quot;Since I saw into your soul, I know things about you that you probably haven&#39;t realized. 
+
+To put it bluntly: You hate your job.&quot;
+
+This again! 
+
+Do I, really?
+
+&quot;I want you to think about this. No rush.&quot;
+
+[[My job as a janitor...]]</tw-passagedata><tw-passagedata pid="142" name="My job as a janitor..." tags="" position="2012.0000000000002,14272.000000000002" size="100,100">When I turned eighteen, my parents were in a hurry to get me out of the house. I suppose I got lucky when my father&#39;s company needed a janitor. I was quickly trained and got a steady job, just like that. And so I moved to the apartment I&#39;m still living in.
+
+Right. I never really wanted to become a janitor. But with my parents&#39; expectations, there was no way I could turn the offer down.
+
+The job itself... I&#39;m really good at it. I fix everything that I see is wrong, even before I get a filled form about a problem. That&#39;s why I straightened the painting, too. 
+
+The people at the auction house, especially the professor, treat me like trash. I suppose they think I&#39;m beneath them due to my occupation. After eight years, the treatment seems unreasonable.
+
+Eight years...
+
+I have no friends, no hobbies, no interests. I just go to work and rest during my free time. That&#39;s my whole life.
+
+I remember that I had actual dreams years ago. I guess they got squashed under my work.
+
+Is it too late to change?
+
+I hear the painting talking. 
+
+[[Snap out of it.]]</tw-passagedata><tw-passagedata pid="143" name="Snap out of it." tags="" position="2012.0000000000002,14422.000000000002" size="100,100">&quot;Yes, you do hate your job. And I can&#39;t stand it!&quot;
+
+The painting seems angry for the first time.
+
+&quot;You&#39;re just going through the motions! You&#39;re so used to this life that you&#39;re scared to change anything!&quot;
+
+I&#39;m left speechless at the sudden outburst.
+
+&quot;I&#39;m a painting. My choices are to be a normal artwork, or trap unsuspecting victims to another world against their will. I can&#39;t be anything else in life. This is how I was created.&quot;
+
+&quot;But you! Your soul is filled with so much potential. Your aspirations are still there, they&#39;ve just been hidden away. You absolutely have a choice.&quot;
+
+I feel... sad for the painting. 
+
+&quot;I hope I&#39;ve helped you at least a bit... I didn&#39;t show all the scary stuff just to play around. I want you to be brave. Because making changes in your life must be much scarier than a crimson sky, lifeless people or a corpse. But you made it here! I believe you can become happy. I really do.&quot;
+
+[[Wipe away the tears.]]</tw-passagedata><tw-passagedata pid="144" name="Wipe away the tears." tags="" position="2012.0000000000002,14572.000000000002" size="100,100">&quot;I guess this is goodbye. I hope you got at least something out of this. I&#39;m sorry for putting you through all of that.&quot;
+
+[[&quot;...Thank you.&quot;]]</tw-passagedata><tw-passagedata pid="145" name="&quot;...Thank you.&quot;" tags="" position="2012.0000000000002,14722.000000000002" size="100,100">One last thing to do.
+
+[[Tilt the painting.]]</tw-passagedata><tw-passagedata pid="146" name="Tilt the painting." tags="" position="2012.0000000000002,14872.000000000002" size="100,100">The world fades to black.
+
+...
+
+I wake up at the floor of the auction house.
+
+It&#39;s midnight. 
+
+Moonlight shines from outside. 
+
+[[Look at the painting.]]
+
+</tw-passagedata><tw-passagedata pid="147" name="Look at the painting." tags="" position="2012.0000000000002,15022.000000000002" size="100,100">The painting is back to its normal state.
+
+It still portrays my suburb, but now it&#39;s daytime and the lights are off. 
+
+Does the painting&#39;s self still exist?
+
+I have a feeling it does.
+
+Now comes the moment I didn&#39;t want to think about before.
+
+What do I do with the painting?
+
+If I&#39;m going to move it, I&#39;m going to use tools so I won&#39;t touch it with my own hands. That should protect me. 
+
+[[Make a choice.]]
+
+</tw-passagedata><tw-passagedata pid="148" name="Make a choice." tags="" position="2012.0000000000002,15172.000000000002" size="100,100">[[Buy it off the auction and take it home.]]
+[[Burn the painting.]]
+[[Leave it there.]]</tw-passagedata><tw-passagedata pid="149" name="Buy it off the auction and take it home." tags="" position="1862.0000000000002,15322.000000000002" size="100,100">After digging through some information on the internet, I find that the painting&#39;s auction will be held tomorrow.
+
+At the auction, there aren&#39;t many bidders. It does look like a mediocre landscape, after all. And not many live in my suburb. 
+
+It takes me back 240 dollars, but that&#39;s a small price to pay. 
+
+I explain my interest in the painting with the fact that I&#39;m living in the suburb. What&#39;s a bit harder to explain is the use of pliers when I move it to the van to bring it home. I hang it up on the wall to remind me of my crazy adventure.
+
+The very next day, I quit my job. It feels like the best decision I&#39;ve ever made.
+
+One day, I accidentally touch the painting. 
+
+I feel a familiar dizziness. I can&#39;t believe I&#39;ve screwed up this badly!
+
+The world looks completely normal, though. It&#39;s still my home, not Johnny&#39;s. That&#39;s weird.
+
+&quot;Oh, you came back!&quot;
+
+[[&quot;H-hello?&quot;]]</tw-passagedata><tw-passagedata pid="150" name="Burn the painting." tags="ending" position="2012.0000000000002,15322.000000000002" size="100,100">I need to make sure the painting doesn&#39;t trap anyone else ever again.
+
+A cursed painting like this shouldn&#39;t exist. I have to protect other people.
+
+Since no one will believe me, I have to take matters into my own hands.
+
+I move the painting outside using two large pliers. I put the painting inside my van and drive to the countryside where no one&#39;s living in. 
+
+I drop the painting on a rocky road.
+
+I pour oil on it and light a match. 
+
+This is for the best, right? 
+
+I try not to think whether the painting can physically feel pain.
+
+I drop the match and enter my van. 
+
+I feel very conflicted as I look at the burning figure in the side mirror.
+
+This was very unpleasant, but it had to be done. 
+
+As I drive home, I remember the painting&#39;s last words. 
+
+I&#39;m sorry too.
+
+[[FIN-&gt;Main Menu]]</tw-passagedata><tw-passagedata pid="151" name="Leave it there." tags="ending" position="2162,15322.000000000002" size="100,100">This isn&#39;t my responsibility anymore.
+
+Maybe it won&#39;t trap anyone else. If it&#39;s not actually evil, its conscience might restrain it.
+
+If someone does get trapped, they can probably get out. I don&#39;t think the painting wants to kill anyone.
+
+Nonetheless, I&#39;ve suffered enough. I need to think about myself first and foremost. Isn&#39;t my happiness what the painting wanted?
+
+I walk away from the painting and exit the auction house.
+
+I feel that a heavy burden has been lifted from my shoulders. 
+
+Once I&#39;ve resigned, this unfortunate chapter of my life will finally end.
+
+I&#39;m free.
+
+[[FIN-&gt;Main Menu]]</tw-passagedata><tw-passagedata pid="152" name="&quot;H-hello?&quot;" tags="" position="1862.0000000000002,15472.000000000002" size="100,100">It&#39;s the painting. We&#39;re having a conversation again. It seems to only be possible inside its world.
+
+&quot;I&#39;ve missed you! What were you thinking, bringing me to your home?&quot;
+
+[[&quot;I figured that was the most moral option.&quot;]]</tw-passagedata><tw-passagedata pid="153" name="&quot;I figured that was the most moral option.&quot;" tags="Ending" position="1862.0000000000002,15623.666666666668" size="100,100">&quot;You really are too kind for your own good, you know.&quot;
+
+I shrug.
+
+&quot;Well, what should we do? Anything you wish!&quot;
+
+...
+...
+
+And that&#39;s how my occasional trips down the rabbit hole started. The painting always let me leave whenever I wanted to, and was always pleased when I visited. 
+
+Then years passed. I found a fulfilling job and started a family. I still visited the other world at times to check up on the painting. Of course, I made it promise not to bring anyone else in the house to its world. 
+
+I&#39;d gotten many friends during the years, but my best friend was still the painting. 
+
+While our original escapade was frightening, it was worth it in the long run. After that event, my life really took a turn for the better. Changes are difficult but often worth it.
+
+After all is said and done, I only feel gratitude. 
+
+And so my final words are...
+
+Thank you.
+
+[[FIN-&gt;Main Menu]]</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
 	if(document.documentElement.getAttribute("data-init")==="loading"){!function(window,document,jQuery,undefined){"use strict";function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,r=Array(e.length);t<e.length;t++)r[t]=e[t];return r}return Array.from(e)}var _createClass=function(){function e(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,r,n){return r&&e(t.prototype,r),n&&e(t,n),t}}(),_slicedToArray=function(){function e(e,t){var r=[],n=!0,a=!1,i=undefined;try{for(var o,s=e[Symbol.iterator]();!(n=(o=s.next()).done)&&(r.push(o.value),!t||r.length!==t);n=!0);}catch(e){a=!0,i=e}finally{try{!n&&s.return&&s.return()}finally{if(a)throw i}}return r}return function(t,r){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,r);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},errorPrologRegExp=/^(?:(?:uncaught\s+(?:exception:\s+)?)?\w*(?:error|exception|_err):\s+)+/i,Alert=function(){function e(e,t,r,n){var a="fatal"===e,i="Apologies! "+(a?"A fatal":"An")+" error has occurred.";i+=a?" Aborting.":" You may be able to continue, but some parts may not work properly.",null==t&&null==r||(i+="\n\nError",null!=t&&(i+=" ["+t+"]"),i+=null!=r?": "+r.replace(errorPrologRegExp,"")+".":": unknown error."),"object"===(void 0===n?"undefined":_typeof(n))&&null!==n&&n.stack&&(i+="\n\nStack Trace:\n"+n.stack),window.alert(i)}function t(t,r,n){e(null,t,r,n)}function r(t,r,n){e("fatal",t,r,n)}return function(e){window.onerror=function(n,a,i,o,s){"complete"===document.readyState?t(null,n,s):(r(null,n,s),window.onerror=e,"function"==typeof window.onerror&&window.onerror.apply(this,arguments))}}(window.onerror),Object.freeze(Object.defineProperties({},{error:{value:t},fatal:{value:r}}))}(),Patterns=function(){var e=function(){var e=new Map([[" ","\\u0020"],["\f","\\f"],["\n","\\n"],["\r","\\r"],["\t","\\t"],["\v","\\v"],[" ","\\u00a0"],[" ","\\u1680"],["᠎","\\u180e"],[" ","\\u2000"],[" ","\\u2001"],[" ","\\u2002"],[" ","\\u2003"],[" ","\\u2004"],[" ","\\u2005"],[" ","\\u2006"],[" ","\\u2007"],[" ","\\u2008"],[" ","\\u2009"],[" ","\\u200a"],["\u2028","\\u2028"],["\u2029","\\u2029"],[" ","\\u202f"],[" ","\\u205f"],["　","\\u3000"],["\ufeff","\\ufeff"]]),t=/^\s$/,r="";return e.forEach(function(e,n){t.test(n)||(r+=e)}),r?"[\\s"+r+"]":"\\s"}(),t="[\\u0020\\f\\t\\v\\u00a0\\u1680\\u180e\\u2000-\\u200a\\u202f\\u205f\\u3000\\ufeff]",r="\\s"===e?"\\S":e.replace(/^\[/,"[^"),n="[0-9A-Z_a-z\\-\\u00c0-\\u00d6\\u00d8-\\u00f6\\u00f8-\\u00ff\\u0150\\u0170\\u0151\\u0171]",a=n.replace("\\-",""),i=function(){return"("+n+"+)\\(([^\\)\\|\\n]+)\\):|"+t+"*("+n+"+)"+t+"*:([^;\\|\\n]+);|"+t+"*((?:[#.]"+n+"+"+t+"*)+);"}();return Object.freeze({space:e,spaceNoTerminator:t,lineTerminator:"[\\n\\r\\u2028\\u2029]",notSpace:r,anyChar:"(?:.|[\\n\\r\\u2028\\u2029])",anyLetter:n,anyLetterStrict:a,identifierFirstChar:"[$A-Z_a-z]",identifierNextChar:"[$0-9A-Z_a-z]",identifier:"[$A-Z_a-z][$0-9A-Z_a-z]*",variableSigil:"[$_]",variable:"[$_][$A-Z_a-z][$0-9A-Z_a-z]*",macroName:"[A-Za-z][\\w-]*|[=-]",templateName:"[A-Za-z][\\w-]*",cssIdOrClassSigil:"[#.]",cssImage:"\\[[<>]?[Ii][Mm][Gg]\\[(?:\\s|\\S)*?\\]\\]+",inlineCss:i,url:"(?:file|https?|mailto|ftp|javascript|irc|news|data):[^\\s'\"]+"})}();!function(){function e(e,t){var r=Number.parseInt(e,10)||0;if(r<1)return"";var n=void 0===t?"":String(t);for(""===n&&(n=" ");n.length<r;){var a=n.length,i=r-a;n+=a>i?n.slice(0,i):n}return n.length>r&&(n=n.slice(0,r)),n}var t=function(){function e(e,n){var a=String(e);if(!a)return a;switch(n){case"start":return t.test(a)?a.replace(t,""):a;case"end":return r.test(a)?a.replace(r,""):a;default:throw new Error('_trimString called with incorrect where parameter value: "'+n+'"')}}var t=new RegExp("^"+Patterns.space+Patterns.space+"*"),r=new RegExp(""+Patterns.space+Patterns.space+"*$");return e}();Array.prototype.flat||Object.defineProperty(Array.prototype,"flat",{configurable:!0,writable:!0,value:function(){function e(){if(null==this)throw new TypeError("Array.prototype.flat called on null or undefined");var t=0===arguments.length?1:Number(arguments[0])||0;return t<1?Array.prototype.slice.call(this):Array.prototype.reduce.call(this,function(r,n){return n instanceof Array?r.push.apply(r,_toConsumableArray(e.call(n,t-1))):r.push(n),r},[])}return e}()}),Array.prototype.flatMap||Object.defineProperty(Array.prototype,"flatMap",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.flatMap called on null or undefined");return Array.prototype.map.apply(this,arguments).flat()}}),Array.prototype.includes||Object.defineProperty(Array.prototype,"includes",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includes called on null or undefined");if(0===arguments.length)return!1;var e=this.length>>>0;if(0===e)return!1;var t=arguments[0],r=Number(arguments[1])||0;for(r<0&&(r=Math.max(0,e+r));r<e;++r){var n=this[r];if(n===t||n!==n&&t!==t)return!0}return!1}}),Object.entries||Object.defineProperty(Object,"entries",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)throw new TypeError("Object.entries object parameter must be an object");return Object.keys(e).map(function(t){return[t,e[t]]})}}),Object.fromEntries||Object.defineProperty(Object,"fromEntries",{configurable:!0,writable:!0,value:function(e){return Array.from(e).reduce(function(e,t){if(Object(t)!==t)throw new TypeError("Object.fromEntries iterable parameter must yield objects");return t[0]in e?Object.defineProperty(e,t[0],{configurable:!0,enumerable:!0,writable:!0,value:t[1]}):e[t[0]]=t[1],e},{})}}),Object.getOwnPropertyDescriptors||Object.defineProperty(Object,"getOwnPropertyDescriptors",{configurable:!0,writable:!0,value:function(e){if(null==e)throw new TypeError("Object.getOwnPropertyDescriptors object parameter is null or undefined");var t=Object(e);return Reflect.ownKeys(t).reduce(function(e,r){var n=Object.getOwnPropertyDescriptor(t,r);return void 0!==n&&(r in e?Object.defineProperty(e,r,{configurable:!0,enumerable:!0,writable:!0,value:n}):e[r]=n),e},{})}}),Object.values||Object.defineProperty(Object,"values",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)throw new TypeError("Object.values object parameter must be an object");return Object.keys(e).map(function(t){return e[t]})}}),String.prototype.padStart||Object.defineProperty(String.prototype,"padStart",{configurable:!0,writable:!0,value:function(t,r){if(null==this)throw new TypeError("String.prototype.padStart called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(t,10);return i<=a?n:e(i-a,r)+n}}),String.prototype.padEnd||Object.defineProperty(String.prototype,"padEnd",{configurable:!0,writable:!0,value:function(t,r){if(null==this)throw new TypeError("String.prototype.padEnd called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(t,10);return i<=a?n:n+e(i-a,r)}}),String.prototype.trimStart||Object.defineProperty(String.prototype,"trimStart",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimStart called on null or undefined");return t(this,"start")}}),String.prototype.trimLeft||Object.defineProperty(String.prototype,"trimLeft",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimLeft called on null or undefined");return t(this,"start")}}),String.prototype.trimEnd||Object.defineProperty(String.prototype,"trimEnd",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimEnd called on null or undefined");return t(this,"end")}}),String.prototype.trimRight||Object.defineProperty(String.prototype,"trimRight",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimRight called on null or undefined");return t(this,"end")}})}(),function(){function _random(){var e=void 0,t=void 0;switch(arguments.length){case 0:throw new Error("_random called with insufficient parameters");case 1:e=0,t=arguments[0];break;default:e=arguments[0],t=arguments[1]}if(e>t){var r=[t,e];e=r[0],t=r[1]}return Math.floor(_nativeMathRandom()*(t-e+1))+e}function _randomIndex(e,t){var r=void 0,n=void 0;switch(t.length){case 1:r=0,n=e-1;break;case 2:r=0,n=Math.trunc(t[1]);break;default:r=Math.trunc(t[1]),n=Math.trunc(t[2])}return Number.isNaN(r)?r=0:!Number.isFinite(r)||r>=e?r=e-1:r<0&&(r=e+r)<0&&(r=0),Number.isNaN(n)?n=0:!Number.isFinite(n)||n>=e?n=e-1:n<0&&(n=e+n)<0&&(n=e-1),_random(r,n)}function _getCodePointStartAndEnd(e,t){var r=e.charCodeAt(t);if(Number.isNaN(r))return{char:"",start:-1,end:-1};if(r<55296||r>57343)return{char:e.charAt(t),start:t,end:t};if(r>=55296&&r<=56319){var n=t+1;if(n>=e.length)throw new Error("high surrogate without trailing low surrogate");var a=e.charCodeAt(n);if(a<56320||a>57343)throw new Error("high surrogate without trailing low surrogate");return{char:e.charAt(t)+e.charAt(n),start:t,end:n}}if(0===t)throw new Error("low surrogate without leading high surrogate");var i=t-1,o=e.charCodeAt(i);if(o<55296||o>56319)throw new Error("low surrogate without leading high surrogate");return{char:e.charAt(i)+e.charAt(t),start:i,end:t}}var _nativeMathRandom=Math.random;Object.defineProperty(Array,"random",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e||!Object.prototype.hasOwnProperty.call(e,"length"))throw new TypeError("Array.random array parameter must be an array or array-lke object");var t=e.length>>>0;if(0!==t){return e[0===arguments.length?_random(0,t-1):_randomIndex(t,Array.prototype.slice.call(arguments,1))]}}}),Object.defineProperty(Array.prototype,"concatUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.concatUnique called on null or undefined");var e=Array.from(this);if(0===arguments.length)return e;var t=Array.prototype.reduce.call(arguments,function(e,t){return e.concat(t)},[]),r=t.length;if(0===r)return e;for(var n=Array.prototype.indexOf,a=Array.prototype.push,i=0;i<r;++i){var o=t[i];-1===n.call(e,o)&&a.call(e,o)}return e}}),Object.defineProperty(Array.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.count called on null or undefined");for(var e=Array.prototype.indexOf,t=arguments[0],r=Number(arguments[1])||0,n=0;-1!==(r=e.call(this,t,r));)++n,++r;return n}}),Object.defineProperty(Array.prototype,"delete",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.delete called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.concat.apply([],arguments),r=t.length,n=[],a=0;a<e;++a)for(var i=this[a],o=0;o<r;++o){var s=t[o];if(i===s||i!==i&&s!==s){n.push(a);break}}for(var u=[],l=0,c=n.length;l<c;++l)u[l]=this[n[l]];for(var d=Array.prototype.splice,f=n.length-1;f>=0;--f)d.call(this,n[f],1);return u}}),Object.defineProperty(Array.prototype,"deleteAt",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.deleteAt called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.splice,r=[].concat(_toConsumableArray(new Set(Array.prototype.concat.apply([],arguments).map(function(t){return t<0?Math.max(0,e+t):t})).values())),n=[].concat(_toConsumableArray(r)).sort(function(e,t){return t-e}),a=[],i=0,o=r.length;i<o;++i)a[i]=this[r[i]];for(var s=0,u=n.length;s<u;++s)t.call(this,n[s],1);return a}}),Object.defineProperty(Array.prototype,"deleteWith",{configurable:!0,writable:!0,value:function(e,t){if(null==this)throw new TypeError("Array.prototype.deleteWith called on null or undefined");if("function"!=typeof e)throw new Error("Array.prototype.deleteWith predicate parameter must be a function");var r=this.length>>>0;if(0===r)return[];for(var n=Array.prototype.splice,a=[],i=[],o=0;o<r;++o)e.call(t,this[o],o,this)&&(i.push(this[o]),a.push(o));for(var s=a.length-1;s>=0;--s)n.call(this,a[s],1);return i}}),Object.defineProperty(Array.prototype,"first",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.first called on null or undefined");if(0!=this.length>>>0)return this[0]}}),Object.defineProperty(Array.prototype,"includesAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAll called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAll.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(!Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!1;return!0}}),Object.defineProperty(Array.prototype,"includesAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAny called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAny.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!0;return!1}}),Object.defineProperty(Array.prototype,"last",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.last called on null or undefined");var e=this.length>>>0;if(0!==e)return this[e-1]}}),Object.defineProperty(Array.prototype,"pluck",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.pluck called on null or undefined");var e=this.length>>>0;if(0!==e){var t=0===arguments.length?_random(0,e-1):_randomIndex(e,[].concat(Array.prototype.slice.call(arguments)));return Array.prototype.splice.call(this,t,1)[0]}}}),Object.defineProperty(Array.prototype,"pluckMany",{configurable:!0,writable:!0,value:function(e){if(null==this)throw new TypeError("Array.prototype.pluckMany called on null or undefined");var t=this.length>>>0;if(0===t)return[];var r=Math.trunc(e);if(!Number.isInteger(r))throw new Error("Array.prototype.pluckMany want parameter must be an integer");if(r<1)return[];r>t&&(r=t);var n=Array.prototype.splice,a=[],i=t-1;do{a.push(n.call(this,_random(0,i--),1)[0])}while(a.length<r);return a}}),Object.defineProperty(Array.prototype,"pushUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.pushUnique called on null or undefined");var e=arguments.length;if(0===e)return this.length>>>0;for(var t=Array.prototype.indexOf,r=Array.prototype.push,n=0;n<e;++n){var a=arguments[n];-1===t.call(this,a)&&r.call(this,a)}return this.length>>>0}}),Object.defineProperty(Array.prototype,"random",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.random called on null or undefined");var e=this.length>>>0;if(0!==e){return this[0===arguments.length?_random(0,e-1):_randomIndex(e,[].concat(Array.prototype.slice.call(arguments)))]}}}),Object.defineProperty(Array.prototype,"randomMany",{configurable:!0,writable:!0,value:function(e){if(null==this)throw new TypeError("Array.prototype.randomMany called on null or undefined");var t=this.length>>>0;if(0===t)return[];var r=Math.trunc(e);if(!Number.isInteger(r))throw new Error("Array.prototype.randomMany want parameter must be an integer");if(r<1)return[];r>t&&(r=t);var n=new Map,a=[],i=t-1;do{var o=void 0;do{o=_random(0,i)}while(n.has(o));n.set(o,!0),a.push(this[o])}while(a.length<r);return a}}),Object.defineProperty(Array.prototype,"shuffle",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.shuffle called on null or undefined");var e=this.length>>>0;if(0===e)return this;for(var t=e-1;t>0;--t){var r=Math.floor(_nativeMathRandom()*(t+1));if(t!==r){var n=this[t];this[t]=this[r],this[r]=n}}return this}}),Object.defineProperty(Array.prototype,"unshiftUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.unshiftUnique called on null or undefined");var e=arguments.length;if(0===e)return this.length>>>0;for(var t=Array.prototype.indexOf,r=Array.prototype.unshift,n=0;n<e;++n){var a=arguments[n];-1===t.call(this,a)&&r.call(this,a)}return this.length>>>0}}),Object.defineProperty(Function.prototype,"partial",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Function.prototype.partial called on null or undefined");var e=Array.prototype.slice,t=this,r=e.call(arguments,0);return function(){for(var n=[],a=0,i=0;i<r.length;++i)n.push(r[i]===undefined?arguments[a++]:r[i]);return t.apply(this,n.concat(e.call(arguments,a)))}}}),Object.defineProperty(Math,"clamp",{configurable:!0,writable:!0,value:function(e,t,r){var n=Number(e);return Number.isNaN(n)?NaN:n.clamp(t,r)}}),Object.defineProperty(Math,"easeInOut",{configurable:!0,writable:!0,value:function(e){return 1-(Math.cos(Number(e)*Math.PI)+1)/2}}),Object.defineProperty(Number.prototype,"clamp",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Number.prototype.clamp called on null or undefined");if(2!==arguments.length)throw new Error("Number.prototype.clamp called with an incorrect number of parameters");var e=Number(arguments[0]),t=Number(arguments[1]);if(e>t){var r=[t,e];e=r[0],t=r[1]}return Math.min(Math.max(this,e),t)}}),RegExp.escape||function(){var e=/[\\^$*+?.()|[\]{}]/g,t=new RegExp(e.source);Object.defineProperty(RegExp,"escape",{configurable:!0,writable:!0,value:function(r){var n=String(r);return n&&t.test(n)?n.replace(e,"\\$&"):n}})}(),function(){var e=/{(\d+)(?:,([+-]?\d+))?}/g,t=new RegExp(e.source);Object.defineProperty(String,"format",{configurable:!0,writable:!0,value:function(r){function n(e,t,r){if(!t)return e;var n=Math.abs(t)-e.length;if(n<1)return e;var a=String(r).repeat(n);return t<0?e+a:a+e}if(arguments.length<2)return 0===arguments.length?"":r;var a=2===arguments.length&&Array.isArray(arguments[1])?[].concat(_toConsumableArray(arguments[1])):Array.prototype.slice.call(arguments,1);return 0===a.length?r:t.test(r)?(e.lastIndex=0,r.replace(e,function(e,t,r){var i=a[t];if(null==i)return"";for(;"function"==typeof i;)i=i();switch(void 0===i?"undefined":_typeof(i)){case"string":break;case"object":i=JSON.stringify(i);break;default:i=String(i)}return n(i,r?Number.parseInt(r,10):0," ")})):r}})}(),Object.defineProperty(String.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.contains called on null or undefined");return-1!==String.prototype.indexOf.apply(this,arguments)}}),Object.defineProperty(String.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.count called on null or undefined");var e=String(arguments[0]||"");if(""===e)return 0;for(var t=String.prototype.indexOf,r=e.length,n=Number(arguments[1])||0,a=0;-1!==(n=t.call(this,e,n));)++a,n+=r;return a}}),Object.defineProperty(String.prototype,"first",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.first called on null or undefined");return _getCodePointStartAndEnd(String(this),0).char}}),Object.defineProperty(String.prototype,"last",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.last called on null or undefined");var e=String(this);return _getCodePointStartAndEnd(e,e.length-1).char}}),Object.defineProperty(String.prototype,"splice",{configurable:!0,writable:!0,value:function(e,t,r){if(null==this)throw new TypeError("String.prototype.splice called on null or undefined");var n=this.length>>>0;if(0===n)return"";var a=Number(e);Number.isSafeInteger(a)?a<0&&(a+=n)<0&&(a=0):a=0,a>n&&(a=n);var i=Number(t);(!Number.isSafeInteger(i)||i<0)&&(i=0);var o=this.slice(0,a);return void 0!==r&&(o+=r),a+i<n&&(o+=this.slice(a+i)),o}}),Object.defineProperty(String.prototype,"splitOrEmpty",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.splitOrEmpty called on null or undefined");return""===String(this)?[]:String.prototype.split.apply(this,arguments)}}),Object.defineProperty(String.prototype,"toLocaleUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toLocaleUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return-1===n?"":r.toLocaleUpperCase()+e.slice(n+1)}}),Object.defineProperty(String.prototype,"toUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return-1===n?"":r.toUpperCase()+e.slice(n+1)}}),Object.defineProperty(Date.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:date)",this.toISOString()]}}),Object.defineProperty(Function.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)","("+this.toString()+")"]}}),Object.defineProperty(Map.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:map)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(RegExp.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)",this.toString()]}}),Object.defineProperty(Set.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:set)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(JSON,"reviveWrapper",{configurable:!0,writable:!0,value:function(e,t){if("string"!=typeof e)throw new TypeError("JSON.reviveWrapper code parameter must be a string");return["(revive:eval)",[e,t]]}}),Object.defineProperty(JSON,"_real_parse",{value:JSON.parse}),Object.defineProperty(JSON,"parse",{configurable:!0,writable:!0,value:function value(text,reviver){return JSON._real_parse(text,function(key,val){var value=val;if(Array.isArray(value)&&2===value.length)switch(value[0]){case"(revive:set)":value=new Set(value[1]);break;case"(revive:map)":value=new Map(value[1]);break;case"(revive:date)":value=new Date(value[1]);break;case"(revive:eval)":try{if(Array.isArray(value[1])){var $ReviveData$=value[1][1];value=eval(value[1][0])}else value=eval(value[1])}catch(e){}}else if("string"==typeof value&&"@@revive@@"===value.slice(0,10))try{value=eval(value.slice(10))}catch(e){}if("function"==typeof reviver)try{value=reviver(key,value)}catch(e){}return value})}}),Object.defineProperty(Array.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.contains called on null or undefined");return Array.prototype.includes.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAll called on null or undefined");return Array.prototype.includesAll.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAny called on null or undefined");return Array.prototype.includesAny.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"flatten",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.flatten called on null or undefined");return Array.prototype.flat.call(this,1/0)}}),Object.defineProperty(String.prototype,"readBracketedList",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.readBracketedList called on null or undefined");for(var e=new RegExp("(?:\\[\\[((?:\\s|\\S)*?)\\]\\])|([^\"'\\s]\\S*)","gm"),t=[],r=void 0;null!==(r=e.exec(this));)r[1]?t.push(r[1]):r[2]&&t.push(r[2]);return t}})}();var Browser=function(){var e=navigator.userAgent.toLowerCase(),t=e.includes("windows phone"),r=Object.freeze({Android:!t&&e.includes("android"),BlackBerry:/blackberry|bb10/.test(e),iOS:!t&&/ip(?:hone|ad|od)/.test(e),Opera:!t&&("object"===_typeof(window.operamini)||e.includes("opera mini")),Windows:t||/iemobile|wpdesktop/.test(e),any:function(){return r.Android||r.BlackBerry||r.iOS||r.Opera||r.Windows}}),n=!r.Windows&&!/khtml|trident|edge/.test(e)&&e.includes("gecko"),a=!e.includes("opera")&&/msie|trident/.test(e),i=a?function(){var t=/(?:msie\s+|rv:)(\d+\.\d)/.exec(e);return t?Number(t[1]):0}():null,o=e.includes("opera")||e.includes(" opr/"),s=o?function(){var t=new RegExp((/khtml|chrome/.test(e)?"opr":"version")+"\\/(\\d+\\.\\d+)"),r=t.exec(e);return r?Number(r[1]):0}():null,u=e.includes("vivaldi");return Object.freeze({userAgent:e,isMobile:r,isGecko:n,isIE:a,ieVersion:i,isOpera:o,operaVersion:s,isVivaldi:u})}(),Has=function(){var e=function(){try{return"function"==typeof document.createElement("audio").canPlayType}catch(e){}return!1}(),t=function(){try{return"Blob"in window&&"File"in window&&"FileList"in window&&"FileReader"in window&&!Browser.isMobile.any()&&(!Browser.isOpera||Browser.operaVersion>=15)}catch(e){}return!1}(),r=function(){try{return"geolocation"in navigator&&"function"==typeof navigator.geolocation.getCurrentPosition&&"function"==typeof navigator.geolocation.watchPosition}catch(e){}return!1}(),n=function(){try{return"MutationObserver"in window&&"function"==typeof window.MutationObserver}catch(e){}return!1}(),a=function(){try{return"performance"in window&&"function"==typeof window.performance.now}catch(e){}return!1}(),i=function(){try{return"ontouchstart"in window||!!window.DocumentTouch&&document instanceof window.DocumentTouch||!!navigator.maxTouchPoints||!!navigator.msMaxTouchPoints}catch(e){}return!1}(),o=function(){try{for(var e=new Map([["transition","transitionend"],["MSTransition","msTransitionEnd"],["WebkitTransition","webkitTransitionEnd"],["MozTransition","transitionend"]]),t=[].concat(_toConsumableArray(e.keys())),r=document.createElement("div"),n=0;n<t.length;++n)if(r.style[t[n]]!==undefined)return e.get(t[n])}catch(e){}return!1}();return Object.freeze({audio:e,fileAPI:t,geolocation:r,mutationObserver:n,performance:a,touch:i,transitionEndEvent:o})}(),Visibility=function(){function e(){return a}function t(){return a&&document[a.stateProperty]||"visible"}function r(){return Boolean(a)}function n(){return Boolean(a&&document[a.hiddenProperty])}var a=function(){try{return Object.freeze([{hiddenProperty:"hidden",stateProperty:"visibilityState",changeEvent:"visibilitychange"},{hiddenProperty:"webkitHidden",stateProperty:"webkitVisibilityState",changeEvent:"webkitvisibilitychange"},{hiddenProperty:"mozHidden",stateProperty:"mozVisibilityState",changeEvent:"mozvisibilitychange"},{hiddenProperty:"msHidden",stateProperty:"msVisibilityState",changeEvent:"msvisibilitychange"}].find(function(e){return e.hiddenProperty in document}))}catch(e){}return undefined}();return Object.freeze(Object.defineProperties({},{vendor:{get:e},state:{get:t},isEnabled:{value:r},isHidden:{value:n},hiddenProperty:{value:a&&a.hiddenProperty},stateProperty:{value:a&&a.stateProperty},changeEvent:{value:a&&a.changeEvent}}))}(),Fullscreen=function(){function e(e){var t=e||document.documentElement;return t===document.documentElement&&("msRequestFullscreen"===f.requestFn||Browser.isOpera&&Browser.operaVersion<15)&&(t=document.body),t}function t(){return f}function r(){return(f||null)&&document[f.element]}function n(){return Boolean(f&&document[f.isEnabled])}function a(){return Boolean(f&&document[f.element])}function i(t,r){var n=this;if(!f)return Promise.reject(new Error("fullscreen not supported"));var i=e(r);if("function"!=typeof i[f.requestFn])return Promise.reject(new Error("fullscreen not supported"));if(a())return Promise.resolve();if(p())return i[f.requestFn](t);var o=".Fullscreen_requestFullscreen";return new Promise(function(e,r){jQuery(i).off(o).one(""+f.errorEvent+o+" "+f.changeEvent+o,function(t){jQuery(n).off(o),t.type===f.errorEvent?r(new Error("unknown fullscreen request error")):e()}),i[f.requestFn](t)})}function o(){var e=this;if(!f||"function"!=typeof document[f.exitFn])return Promise.reject(new TypeError("fullscreen not supported"));if(!a())return Promise.reject(new TypeError("fullscreen mode not active"));if(p())return document[f.exitFn]();var t=".Fullscreen_exitFullscreen";return new Promise(function(r,n){jQuery(document).off(t).one(""+f.errorEvent+t+" "+f.changeEvent+t,function(a){jQuery(e).off(t),a.type===f.errorEvent?n(new Error("unknown fullscreen exit error")):r()}),document[f.exitFn]()})}function s(e,t){return a()?o():i(e,t)}function u(t,r){if(f){var n=e(r);$(n).on(f.changeEvent,t)}}function l(t,r){if(f){var n=e(r);t?$(n).off(f.changeEvent,t):$(n).off(f.changeEvent)}}function c(t,r){if(f){var n=e(r);$(n).on(f.errorEvent,t)}}function d(t,r){if(f){var n=e(r);t?$(n).off(f.errorEvent,t):$(n).off(f.errorEvent)}}var f=function(){try{return Object.freeze([{isEnabled:"fullscreenEnabled",element:"fullscreenElement",requestFn:"requestFullscreen",exitFn:"exitFullscreen",changeEvent:"fullscreenchange",errorEvent:"fullscreenerror"},{isEnabled:"webkitFullscreenEnabled",element:"webkitFullscreenElement",requestFn:"webkitRequestFullscreen",exitFn:"webkitExitFullscreen",changeEvent:"webkitfullscreenchange",errorEvent:"webkitfullscreenerror"},{isEnabled:"mozFullScreenEnabled",element:"mozFullScreenElement",requestFn:"mozRequestFullScreen",exitFn:"mozCancelFullScreen",changeEvent:"mozfullscreenchange",errorEvent:"mozfullscreenerror"},{isEnabled:"msFullscreenEnabled",element:"msFullscreenElement",requestFn:"msRequestFullscreen",exitFn:"msExitFullscreen",changeEvent:"MSFullscreenChange",errorEvent:"MSFullscreenError"}].find(function(e){return e.isEnabled in document}))}catch(e){}return undefined}(),p=function(){function e(){if(null!==t)return t;if(t=!1,f)try{var e=document.exitFullscreen();e.catch(function(){}),t=e instanceof Promise}catch(e){}return t}var t=null;return e}();return Object.freeze(Object.defineProperties({},{vendor:{get:t},element:{get:r},isEnabled:{value:n},isFullscreen:{value:a},request:{value:i},exit:{value:o},toggle:{value:s},onChange:{value:u},offChange:{value:l},onError:{value:c},offError:{value:d}}))}(),_ref3=function(){function e(e){for(var t=e.cloneNode(!0),r=document.createDocumentFragment(),n=void 0;null!==(n=t.firstChild);){if(n.nodeType===Node.ELEMENT_NODE)switch(n.nodeName.toUpperCase()){case"BR":case"DIV":case"P":r.appendChild(document.createTextNode(" "))}r.appendChild(n)}return r.textContent}function t(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)return e;if(e instanceof String)return String(e);if(e instanceof Number)return Number(e);if(e instanceof Boolean)return Boolean(e);if("function"==typeof e.clone)return e.clone(!0);if(e.nodeType&&"function"==typeof e.cloneNode)return e.cloneNode(!0);var r=void 0;return e instanceof Array?r=new Array(e.length):e instanceof Date?r=new Date(e.getTime()):e instanceof Map?(r=new Map,e.forEach(function(e,n){return r.set(n,t(e))})):e instanceof RegExp?r=new RegExp(e):e instanceof Set?(r=new Set,e.forEach(function(e){return r.add(t(e))})):r=Object.create(Object.getPrototypeOf(e)),Object.keys(e).forEach(function(n){return r[n]=t(e[n])}),r}function r(e){
