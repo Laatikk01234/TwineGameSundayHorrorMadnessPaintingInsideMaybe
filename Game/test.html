@@ -101,7 +101,15 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
 	<tw-storydata name="test" startnode="6" creator="Twine" creator-version="2.3.7" ifid="41E8E662-23C7-48FF-97F3-4A17E3EC60F6" zoom="1" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.imagex {
-  float:right;
+  width: 500px;
+  height: 500px;
+  grid-column: 10;
+  grid-row: 1;
+}
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
 }
 body {
   
@@ -136,7 +144,8 @@ a:hover {
 }
 
 /* opacity */
-/* transition: 2s all ease * /</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="404,171" size="100,100">$knife
+/* transition: 2s all ease * /
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="404,171" size="100,100">$knife
 &lt;&lt;$knife&gt;&gt;
 &lt;&lt;if $knife is true&gt;&gt;
 	[[1111111111111|111]]
