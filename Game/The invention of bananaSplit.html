@@ -100,7 +100,7 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="The invention of bananaSplit" startnode="1" creator="Twine" creator-version="2.3.7" ifid="3AFB318F-3318-46AC-A0A4-9C1DE0142B64" zoom="1" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body {
+	<tw-storydata name="The invention of bananaSplit" startnode="1" creator="Twine" creator-version="2.3.7" ifid="3AFB318F-3318-46AC-A0A4-9C1DE0142B64" zoom="0.6" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body {
   
   background-color: black;
   /* text color*/
@@ -149,11 +149,16 @@ a:hover {
 [[Start Game]]
 
 &lt;&lt;set $knife to false&gt;&gt;
+&lt;&lt;set $stabbed to false&gt;&gt;
 &lt;&lt;set $johnny to false&gt;&gt;
 &lt;&lt;set $cigarettes to false&gt;&gt;
 &lt;&lt;set $gemma to false&gt;&gt;
 &lt;&lt;set $infotrigger to false&gt;&gt;
-&lt;&lt;set $pigeon to false&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Start Game" tags="" position="807,159" size="100,100">It&#39;s a typical Wednesday afternoon. I&#39;ve just gotten the light bulb fixed in the hall of the California School of Auctioneering, my workplace. I&#39;m sure the professor will find a new thing to complain about soon enough. I&#39;m quite used to it, though. This is the mundane life of a janitor.
+&lt;&lt;set $pigeon to false&gt;&gt;
+&lt;&lt;set $leftafterpigeonspoke to false&gt;&gt;
+&lt;&lt;set $deduction to 0&gt;&gt;
+&lt;&lt;set $police to false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="2" name="Start Game" tags="" position="807,159" size="100,100">It&#39;s a typical Wednesday afternoon. I&#39;ve just gotten the light bulb fixed in the hall of the California School of Auctioneering, my workplace. I&#39;m sure the professor will find a new thing to complain about soon enough. I&#39;m quite used to it, though. This is the mundane life of a janitor.
 
 [[Hmm? What&#39;s that up on the stage?]]</tw-passagedata><tw-passagedata pid="3" name="Hmm? What&#39;s that up on the stage?" tags="" position="807,309" size="100,100">Looks like one of the exhibited paintings has been left here. That&#39;s unusual. The professor is quite particular about keeping the art pieces hidden when they&#39;re not needed.
 
@@ -355,15 +360,11 @@ Johnny suddenly seems larger. Something glitters in his hand against the light. 
 
 I feel threatened. 
 
-if knife:
 &lt;&lt;if $knife is true&gt;&gt;
 	[[Grab the knife from my pocket.]]
+&lt;&lt;else&gt;&gt;
+	[[Get ready for a fight.]]
 &lt;&lt;/if&gt;&gt;
-if no knife:
-
-[[Get ready for a fight.]]
-
-if knife, if no knife:
 
 [[&quot;What&#39;s wrong, Johnny?&quot;]]</tw-passagedata><tw-passagedata pid="30" name="Grab the knife from my pocket." tags="" position="354,3454" size="100,100">&quot;This is exciting! Let&#39;s have a duel. The winner takes the house! En garde!&quot;
 
@@ -382,8 +383,7 @@ He has a knife and I don&#39;t. The tools don&#39;t make for good enough weapons
 [[&quot;What&#39;s wrong, Johnny?&quot;]]</tw-passagedata><tw-passagedata pid="32" name="&quot;What&#39;s wrong, Johnny?&quot;" tags="" position="575,3658" size="100,100">&quot;Who does this house belong to?&quot;
 
 [[&quot;Of course it belongs to you.&quot;]]
-[[&quot;It&#39;s my home!&quot;]]</tw-passagedata><tw-passagedata pid="33" name="Stab Johnny." tags="code" position="283,3588" size="100,100">stabbed
-
+[[&quot;It&#39;s my home!&quot;]]</tw-passagedata><tw-passagedata pid="33" name="Stab Johnny." tags="code" position="283,3588" size="100,100">
 I hit Johnny with my knife.
 
 I&#39;m sure I hit him.
@@ -398,7 +398,8 @@ Johnny&#39;s smiling. He seems to be enjoying himself. I&#39;m astounded.
 
 &quot;But I guess it was self-defense. And I am an invader in your home, so you should be trying to get rid of me. I don&#39;t blame you, buddy.&quot;
 
-[[&quot;So you admit that this is my home! Just what are you?&quot;]]</tw-passagedata><tw-passagedata pid="34" name="Try to escape." tags="" position="403,3586" size="100,100">Johnny blocks my way, but doesn&#39;t attack.
+[[&quot;So you admit that this is my home! Just what are you?&quot;]]
+&lt;&lt;set $stabbed to true&gt;&gt;</tw-passagedata><tw-passagedata pid="34" name="Try to escape." tags="" position="403,3586" size="100,100">Johnny blocks my way, but doesn&#39;t attack.
 
 I should probably talk my way out of this.
 
@@ -610,16 +611,13 @@ I get creeped out.
 
 &quot;Do you like your job?&quot;
 
-if Johnny encounter done:
 &lt;&lt;if $johnny is true&gt;&gt;
 	Johnny asked the same thing. Are they related somehow?
 
 	It&#39;s still hard to answer that.
-	else:
 &lt;&lt;else&gt;&gt;
 	The question takes me aback. 
 &lt;&lt;/if&gt;&gt;
-	either:
 
 	[[&quot;I&#39;m... not sure.&quot;]]
 </tw-passagedata><tw-passagedata pid="61" name="&quot;I&#39;m... not sure.&quot;" tags="" position="691,5807" size="100,100">&quot;Well, I think it&#39;s something you should think about.&quot; 
@@ -667,8 +665,7 @@ We stop in front of a crosswalk.
 &quot;I live just across the street.&quot;
 
 [[Walk her home.]]
-</tw-passagedata><tw-passagedata pid="66" name="Walk her home." tags="code" position="689,6388" size="100,100">if cigarette:
-&lt;&lt;if $cigarettes is true&gt;&gt;
+</tw-passagedata><tw-passagedata pid="66" name="Walk her home." tags="code" position="689,6388" size="100,100">&lt;&lt;if $cigarettes is true&gt;&gt;
   When we get to her door, Gemma takes two cigarettes from the pack she got from the store and hand one of them to me.
 
   &quot;Do you smoke? These Warlboros are pretty good.&quot;
@@ -679,7 +676,6 @@ We stop in front of a crosswalk.
   [[Politely decline.]]
   [[&quot;Are you sure you should smoke?&quot;]]
 
-  else:
 &lt;&lt;else&gt;&gt;
   &quot;Well, thanks a lot for taking a walk with me. It was nice talking to some so young and dashing.&quot; 
 
@@ -708,15 +704,12 @@ She starts smoking.
 
 &quot;Well, thanks a lot for taking a walk with me. It was nice talking to someone so young and dashing.&quot; 
 
-[[Say your goodbyes and leave.]]</tw-passagedata><tw-passagedata pid="70" name="Say your goodbyes and leave." tags="code" position="1083,6935" size="100,100">Gemma encounter done
-
-if infotrigger:
+[[Say your goodbyes and leave.]]</tw-passagedata><tw-passagedata pid="70" name="Say your goodbyes and leave." tags="code" position="1083,6931.666666666667" size="100,100">
 &lt;&lt;if $infotrigger is true&gt;&gt;
   The feeling that she knows more than she lets on returns to me. I turn around, but she&#39;s already gone.
 
   It wouldn&#39;t be polite to bother her more, so I let it slide. Maybe it was nothing.
 
-  else, if infotrigger:
 &lt;&lt;else&gt;&gt;
   Well, that was an interesting conversation. I can&#39;t help feeling sorry for her.
 
@@ -836,9 +829,7 @@ It was worth a shot.
 
 Why am I listening to this scumbag? 
 
-[[&quot;And what are you?&quot;]]</tw-passagedata><tw-passagedata pid="87" name="&quot;And what are you?&quot;" tags="code" position="990,8691" size="100,100">pigeon encounter done
-
-&quot;I&#39;m a pigeon, buddy!&quot;
+[[&quot;And what are you?&quot;]]</tw-passagedata><tw-passagedata pid="87" name="&quot;And what are you?&quot;" tags="code" position="990,8689.333333333334" size="100,100">&quot;I&#39;m a pigeon, buddy!&quot;
 
 The bird flies away.
 
@@ -864,7 +855,7 @@ That was a talking bird. Am I going insane? No, that wasn&#39;t the only weird t
 
 [[Time to think.]]
 
-left after talk pigeon</tw-passagedata><tw-passagedata pid="90" name="Possible init -&gt; atleast for sounds" tags="" position="1241,159" size="100,100">maybe init variables here?
+&lt;&lt;set $leftafterpigeonspoke to true&gt;&gt;</tw-passagedata><tw-passagedata pid="90" name="Possible init -&gt; atleast for sounds" tags="" position="1241,159" size="100,100">maybe init variables here?
 
 $variableList</tw-passagedata><tw-passagedata pid="91" name="What was that?" tags="code" position="1266,2000" size="100,100">I quickly walk away from the police station. I&#39;m scared.
 
@@ -884,115 +875,113 @@ I push the incident away from my mind for now. I&#39;ve got a more pressing issu
 
 [[Take a walk to cool my head.]]
 
-police encounter done</tw-passagedata><tw-passagedata pid="92" name="When I came back home and Johnny was there." tags="code" position="1410,9573" size="100,100">That&#39;s the main issue here. A stranger was living in my home when I got there. There was something off about Johnny...
+&lt;&lt;set $police to true&gt;&gt;
+</tw-passagedata><tw-passagedata pid="92" name="When I came back home and Johnny was there." tags="code" position="1411.6666666666667,9574.666666666666" size="100,100">That&#39;s the main issue here. A stranger was living in my home when I got there. There was something off about Johnny...
 
-if johnny done
+&lt;&lt;if $johnny is true&gt;&gt;
+  He was definitely acting like he owned the place. But that can&#39;t be right. And then there was the episode in the cellar... I&#39;m not sure what to make of him. 
 
-He was definitely acting like he owned the place. But that can&#39;t be right. And then there was the episode in the cellar... I&#39;m not sure what to make of him. 
+  I feel that an important thing here is whether he&#39;s actually been living there instead of me.
 
-I feel that an important thing here is whether he&#39;s actually been living there instead of me.
+  [[I think he&#39;s actually living there.]]
+  [[I think he&#39;s staged the situation after breaking in there.]]
 
-[[I think he&#39;s actually living there.]]
-[[I think he&#39;s staged the situation after breaking in there.]]
- 
 
-else
+&lt;&lt;else&gt;&gt;
 
-[[I then visited the store.]]</tw-passagedata><tw-passagedata pid="93" name="Before I came home." tags="code" position="1658,9178" size="100,100">add +2 deduction
+  [[I then visited the store.]]
 
-...That&#39;s right! 
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="93" name="Before I came home." tags="code" position="1658,9178" size="100,100">...That&#39;s right! 
 
 The painting! 
 
 It was such a small thing... but it has to be connected somehow. The dizziness I felt after touching it was strong and abnormal. 
 
 This must be the key. I should still go over the evening to make sure I don&#39;t miss anything.
-[[I went home and Johnny was there.-&gt;When I came back home and Johnny was there.]]</tw-passagedata><tw-passagedata pid="94" name="I think he&#39;s actually living there." tags="code" position="1223,9727" size="100,100">add +1 deduction
-
-While logically it doesn&#39;t make sense that we&#39;re living in the same apartment without knowing about each other, I don&#39;t think he staged anything. The differences inside the house were too thorough.
+[[I went home and Johnny was there.-&gt;When I came back home and Johnny was there.]]
+&lt;&lt;set $deduction to $deduction +2&gt;&gt;</tw-passagedata><tw-passagedata pid="94" name="I think he&#39;s actually living there." tags="code" position="1223,9727" size="100,100">While logically it doesn&#39;t make sense that we&#39;re living in the same apartment without knowing about each other, I don&#39;t think he staged anything. The differences inside the house were too thorough.
 
 How is this possible?
 
 [[I&#39;ve travelled in time.]]
 [[I&#39;m in another dimension.]]
-[[I&#39;m dreaming.]]</tw-passagedata><tw-passagedata pid="95" name="I think he&#39;s staged the situation after breaking in there." tags="" position="1373,9727" size="100,100">I know I&#39;m living there, not him. He&#39;s messing with me by making the apartment look different and by acting weird. What a psycho.
+[[I&#39;m dreaming.]]
 
-[[I then visited the store.]]</tw-passagedata><tw-passagedata pid="96" name="I then visited the store." tags="code" position="1495,10080" size="100,100">if gemma encounter done
+&lt;&lt;set $deduction to $deduction +1&gt;&gt;</tw-passagedata><tw-passagedata pid="95" name="I think he&#39;s staged the situation after breaking in there." tags="" position="1373,9727" size="100,100">I know I&#39;m living there, not him. He&#39;s messing with me by making the apartment look different and by acting weird. What a psycho.
 
-Gemma seemed relatively normal, though maybe she also knew more than she wanted to let on? She talked about herself alot...
+[[I then visited the store.]]</tw-passagedata><tw-passagedata pid="96" name="I then visited the store." tags="code" position="1495,10080" size="100,100">&lt;&lt;if $gemma is true&gt;&gt;
+  Gemma seemed relatively normal, though maybe she also knew more than she wanted to let on? She talked about herself alot...
 
-if gemma encounter done, if johnny encounter done
+/* is this fucked up? */
+  &lt;&lt;if $johnny is true&gt;&gt;
+	Does something connect her to Johnny?
 
-Does something connect her to Johnny?
+	[[They must be relatives.]]
+	[[They must be friends.]]
+	[[They both brought up my job.]]
+  &lt;&lt;/if&gt;&gt;
+&lt;&lt;else&gt;&gt;
+  I don&#39;t think I got any new information at the store, except that the clerk was different.
 
-[[They must be relatives.]]
-[[They must be friends.]]
-[[They both brought up my job.]]
-
-else
-
-I don&#39;t think I got any new information at the store, except that the clerk was different.
-
-[[Then I went to the park.]]</tw-passagedata><tw-passagedata pid="97" name="I&#39;ve travelled in time." tags="" position="1073,9877" size="100,100">Maybe I&#39;ve travelled in time, and this world in which Johnny is living in my house is the past or the future. 
+  [[Then I went to the park.]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="97" name="I&#39;ve travelled in time." tags="" position="1073,9877" size="100,100">Maybe I&#39;ve travelled in time, and this world in which Johnny is living in my house is the past or the future. 
 
 Then again, I don&#39;t really see too many differences in the suburb. The streets and the store felt normal...
 
 I don&#39;t know about this.
 
-[[I then visited the store.]]</tw-passagedata><tw-passagedata pid="98" name="I&#39;m in another dimension." tags="code" position="1223,9877" size="100,100">add +1 deduction
-
-I think that&#39;s it. This is a parallel universe. People are different and I&#39;ve been replaced as the house&#39;s owner. 
+[[I then visited the store.]]</tw-passagedata><tw-passagedata pid="98" name="I&#39;m in another dimension." tags="code" position="1223,9877" size="100,100">I think that&#39;s it. This is a parallel universe. People are different and I&#39;ve been replaced as the house&#39;s owner. 
 
 That&#39;s crazy, but it&#39;s the most logical conclusion I can reach.
 
-[[I then visited the store.]]</tw-passagedata><tw-passagedata pid="99" name="I&#39;m dreaming." tags="" position="1372,9877" size="100,100">Maybe I&#39;ve just been dreaming all this time? Does that make sense? 
+[[I then visited the store.]]
+
+&lt;&lt;set $deduction to $deduction +1&gt;&gt;</tw-passagedata><tw-passagedata pid="99" name="I&#39;m dreaming." tags="" position="1372,9877" size="100,100">Maybe I&#39;ve just been dreaming all this time? Does that make sense? 
 
 I&#39;m not so sure about that...
 
-[[I then visited the store.]]</tw-passagedata><tw-passagedata pid="100" name="Then I went to the park." tags="code" position="1455,10477" size="100,100">if pigeon encounter done
+[[I then visited the store.]]</tw-passagedata><tw-passagedata pid="100" name="Then I went to the park." tags="code" position="1455,10477" size="100,100">&lt;&lt;if $pigeon is true&gt;&gt;
+  There was a talking, foul-mouthed pigeon. First of all, talking birds are not supposed to exist, but it also told me a lot about my situation. What did I learn again?
 
-There was a talking, foul-mouthed pigeon. First of all, talking birds are not supposed to exist, but it also told me a lot about my situation. What did I learn again?
+  [[That I&#39;m trapped.]]
+  [[That I&#39;m free as a bird.]]
+  [[That I&#39;m going to die.]]
 
-[[That I&#39;m trapped.]]
-[[That I&#39;m free as a bird.]]
-[[That I&#39;m going to die.]]
+&lt;&lt;else&gt;&gt;
+  I just ate my salad. Nothing peculiar there.
 
-else
+  if left after talk pigeon
 
-I just ate my salad. Nothing peculiar there.
+  There was a talking, foul-mouthed pigeon. That was really weird. Birds aren&#39;t supposed to talk, so what&#39;s going on? Maybe I&#39;ve gone crazy.
 
-if left after talk pigeon
-
-There was a talking, foul-mouthed pigeon. That was really weird. Birds aren&#39;t supposed to talk, so what&#39;s going on? Maybe I&#39;ve gone crazy.
-
-[[Is that all?]]</tw-passagedata><tw-passagedata pid="101" name="They must be relatives." tags="" position="1273,10227" size="100,100">Is that it? I don&#39;t really have any evidence of that...
+  [[Is that all?]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="101" name="They must be relatives." tags="" position="1273,10227" size="100,100">Is that it? I don&#39;t really have any evidence of that...
 
 [[Then I went to the park.]]</tw-passagedata><tw-passagedata pid="102" name="They must be friends." tags="" position="1388,10228" size="100,100">Maybe they&#39;re friends? Is there any evidence, though...?
 
-[[Then I went to the park.]]</tw-passagedata><tw-passagedata pid="103" name="They both brought up my job." tags="code" position="1548,10225" size="100,100">add +1 deduction
-
-They both asked if I&#39;m happy working as a janitor. It sure is a tricky question...
+[[Then I went to the park.]]</tw-passagedata><tw-passagedata pid="103" name="They both brought up my job." tags="code" position="1548,10225" size="100,100">They both asked if I&#39;m happy working as a janitor. It sure is a tricky question...
 
 The connection is not strong, but I think they both were serious when talking about it with a stranger they just met. I should keep this in mind.
 
-[[Then I went to the park.]]</tw-passagedata><tw-passagedata pid="104" name="Is that all?" tags="code" position="1450,10837" size="100,100">if police encounter done
+[[Then I went to the park.]]
 
-I can&#39;t forget about what happened at the police station. The woman in there was so creepy. Did I learn something important from that encounter?
+&lt;&lt;set $deduction to $deduction +1&gt;&gt;</tw-passagedata><tw-passagedata pid="104" name="Is that all?" tags="code" position="1450,10837" size="100,100">&lt;&lt;if $police is true&gt;&gt;
+  I can&#39;t forget about what happened at the police station. The woman in there was so creepy. Did I learn something important from that encounter?
 
-[[I can probably reach the police if I try again tomorrow.]]
-[[I can&#39;t reach the police.]]
+  [[I can probably reach the police if I try again tomorrow.]]
+  [[I can&#39;t reach the police.]]
 
-else
+&lt;&lt;else&gt;&gt;
+  Nothing else comes to mind. 
 
-Nothing else comes to mind. 
-
-[[I think that&#39;s all.]]</tw-passagedata><tw-passagedata pid="105" name="That I&#39;m trapped." tags="code" position="1253,10622" size="100,100">add +1 deduction
-
-Right. I think it meant that I&#39;m trapped in a metaphysical sense, since it feels like I can move around the streets normally.
+  [[I think that&#39;s all.]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="105" name="That I&#39;m trapped." tags="code" position="1253,10622" size="100,100">Right. I think it meant that I&#39;m trapped in a metaphysical sense, since it feels like I can move around the streets normally.
 
 It also said that there might be way to save myself. That gives me hope, but I still need to figure out how to do that.
 
-[[Is that all?]]</tw-passagedata><tw-passagedata pid="106" name="That I&#39;m free as a bird." tags="" position="1520,10625" size="100,100">Wait, did it say that? All this information is hard to process...
+[[Is that all?]]
+
+&lt;&lt;set $deduction to $deduction +1&gt;&gt;</tw-passagedata><tw-passagedata pid="106" name="That I&#39;m free as a bird." tags="" position="1520,10625" size="100,100">Wait, did it say that? All this information is hard to process...
 
 Oh well, moving on.
 
@@ -1004,31 +993,30 @@ It&#39;s probably not important.
 
 Spending the night at a park doesn&#39;t sound too enticing, though... I need to resolve the situation.
 
-[[I think that&#39;s all.]]</tw-passagedata><tw-passagedata pid="109" name="I can&#39;t reach the police." tags="code" position="1552,10990" size="100,100">deduction +1
-
-I can&#39;t call them, I can&#39;t visit the station even though it should be open... and I even see something scary that makes me want to give up on reaching the police.
+[[I think that&#39;s all.]]</tw-passagedata><tw-passagedata pid="109" name="I can&#39;t reach the police." tags="code" position="1552,10990" size="100,100">I can&#39;t call them, I can&#39;t visit the station even though it should be open... and I even see something scary that makes me want to give up on reaching the police.
 
 It&#39;s almost as if... something wants to keep me away from officials. 
 
 Or maybe the police are just gone somehow.
 
-[[I think that&#39;s all.]]</tw-passagedata><tw-passagedata pid="110" name="I think that&#39;s all." tags="code" position="1458,11192" size="100,100">if deduction 5 or higher
+[[I think that&#39;s all.]]
 
-I feel like I&#39;m starting to see the whole picture. Now I need to choose what to do.
+&lt;&lt;set $deduction to $deduction +1&gt;&gt;</tw-passagedata><tw-passagedata pid="110" name="I think that&#39;s all." tags="code" position="1459.6666666666667,11192" size="100,100">&lt;&lt;if $deduction gte 5&gt;&gt;
+  I feel like I&#39;m starting to see the whole picture. Now I need to choose what to do.
 
-[[Go home.]]
-[[Go to the auction house.]]
+  [[Go home.]]
+  [[Go to the auction house.]]
 
 
-else
+&lt;&lt;else&gt;&gt;
+  Damn it! 
 
-Damn it! 
+  I feel like I have some information, but I can&#39;t really make out the connections. I wish I had been more thorough.
 
-I feel like I have some information, but I can&#39;t really make out the connections. I wish I had been more thorough.
+  Then again, maybe I don&#39;t need to know everything. I&#39;m a practical person, after all. I just need to take back my house. I&#39;m sure I can do it this time. Maybe the psycho has already left?
 
-Then again, maybe I don&#39;t need to know everything. I&#39;m a practical person, after all. I just need to take back my house. I&#39;m sure I can do it this time. Maybe the psycho has already left?
-
-[[Go home.-&gt;Go home.(bad)]]</tw-passagedata><tw-passagedata pid="111" name="Go home.(bad)" tags="" position="1928,11435" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="112" name="Go home." tags="" position="982,11443" size="100,100">I think I should try going home again. It might not work, but at least Johnny is there. I think contact with him might lead to something.
+  [[Go home.-&gt;Go home.(bad)]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="111" name="Go home.(bad)" tags="" position="1928,11435" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="112" name="Go home." tags="" position="982,11443" size="100,100">I think I should try going home again. It might not work, but at least Johnny is there. I think contact with him might lead to something.
 
 I get to my door and knock on it. After a few seconds, a familiar face appears.
 
@@ -1132,12 +1120,12 @@ Stay sane.
 
 I take a turn in the alley. In front of me is the corpse of an old lady.
 
-if gemma done
+&lt;&lt;if $gemma is true&gt;&gt;
 [[&quot;Gemma...?&quot;]]
 
-else
+&lt;&lt;else&gt;&gt;
 [[Oh god...!-&gt;&quot;Gemma...?&quot;]]
-
+&lt;&lt;/if&gt;&gt;
 
 </tw-passagedata><tw-passagedata pid="122" name="&quot;Gemma...?&quot;" tags="" position="1253,12912" size="100,100">Despite the same color being everywhere, I can recognize the fluid next to the corpse. The smell is so strong I want to puke.
 
@@ -1248,29 +1236,27 @@ Is this thing serious? I&#39;m amazed I&#39;m still sane after all of that.
 
 [[Ask another question.]]</tw-passagedata><tw-passagedata pid="132" name="&quot;Who are the other people?&quot;" tags="code" position="1158,13962" size="100,100">&quot;Well, the things outside are just creations I didn&#39;t really think too much about. None of them are real, mind you. I just wanted to use them for effect. Other than that, there were three beings I separated my personality into. Field agents, if you will.&quot;
 
-if johnny done
+&lt;&lt;if $johnny is true&gt;&gt;
+  &quot;Johnny is someone I might be if I was a middle-aged man. Sitting in your home, drinking beer, listening to rock... that&#39;s the life! Do what you want, when you want. No one to bring you down.&quot;
 
-&quot;Johnny is someone I might be if I was a middle-aged man. Sitting in your home, drinking beer, listening to rock... that&#39;s the life! Do what you want, when you want. No one to bring you down.&quot;
+  Adult life is not that simple... but I suppose the painting doesn&#39;t know that.
 
-Adult life is not that simple... but I suppose the painting doesn&#39;t know that.
+  &quot;He played the role of your counterpart. I wanted to give you a big surprise when you went home, so I planted him there.&quot;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $gemma is true&gt;&gt;
+  &quot;Gemma was a bit more nuanced. Her having been a model reflects the state of being a painting quite well. Through her, I tried to talk to you about what I deemed important in your life.&quot;
 
-&quot;He played the role of your counterpart. I wanted to give you a big surprise when you went home, so I planted him there.&quot;
+  My life? What&#39;s it referring to?
 
-if gemma done
-&quot;Gemma was a bit more nuanced. Her having been a model reflects the state of being a painting quite well. Through her, I tried to talk to you about what I deemed important in your life.&quot;
+  &quot;Oh, and she seemed to like you a bit too much. Gemma didn&#39;t really like the grand finale I had planned for you, so she tried to protest. Well, I got rid of her and even used her to shock you even more! Ironic, isn&#39;t it.&quot;
 
-My life? What&#39;s it referring to?
+  I stare daggers at the painting.
 
-&quot;Oh, and she seemed to like you a bit too much. Gemma didn&#39;t really like the grand finale I had planned for you, so she tried to protest. Well, I got rid of her and even used her to shock you even more! Ironic, isn&#39;t it.&quot;
-
-I stare daggers at the painting.
-
-&quot;Don&#39;t look at me like that. I can do what I want to my personalities!&quot;
-
-if pigeon done
-
-&quot;The pigeon represents my rebellious thoughts. Sometimes you just want to flip the bird, you know? Hmm, maybe you don&#39;t. Anyway, I got worried you wouldn&#39;t piece things out well enough, so I dropped some coherent hints with the bird. It also served as my eyes when you weren&#39;t talking to Johnny or Gemma.&quot;
-
+  &quot;Don&#39;t look at me like that. I can do what I want to my personalities!&quot;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $pigeon is true&gt;&gt;
+  &quot;The pigeon represents my rebellious thoughts. Sometimes you just want to flip the bird, you know? Hmm, maybe you don&#39;t. Anyway, I got worried you wouldn&#39;t piece things out well enough, so I dropped some coherent hints with the bird. It also served as my eyes when you weren&#39;t talking to Johnny or Gemma.&quot;
+&lt;&lt;/if&gt;&gt;
 [[Ask another question.]]</tw-passagedata><tw-passagedata pid="133" name="&quot;What is this place?&quot;" tags="" position="1392,13973" size="100,100">&quot;This is a parallel world. I&#39;ve constructed it to the best of my ability, just for you! Souls contain lots of information if you know where to look. And for parts I&#39;m not sure about, I just fill them in with something that&#39;s close enough.&quot;
 
 I remember the weird brand names and the clerk.
