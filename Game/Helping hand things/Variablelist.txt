@@ -1,10 +1,17 @@
 variables
 
 <<set $knife to false>>
+<<set $stabbed to false>>
 <<set $johnny to false>>
 <<set $cigarettes to false>>
 <<set $gemma to false>>
 <<set $infotrigger to false>>
 <<set $pigeon to false>>
+<<set $leftafterpigeonspoke to false>>
+<<set $deduction to 0>>
+<<set $police to false>>
 
+<<if $infotrigger is true>>
+<<else>>
+<</if>>
 /* */
