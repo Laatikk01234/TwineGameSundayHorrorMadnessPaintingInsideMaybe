@@ -100,7 +100,26 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="The invention of bananaSplit" startnode="1" creator="Twine" creator-version="2.3.7" ifid="3AFB318F-3318-46AC-A0A4-9C1DE0142B64" zoom="0.6" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body {
+	<tw-storydata name="The invention of bananaSplit" startnode="1" creator="Twine" creator-version="2.3.7" ifid="3AFB318F-3318-46AC-A0A4-9C1DE0142B64" zoom="0.6" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.text{
+    grid-column: 1/5;
+    grid-row: 1/9;
+}
+.imagex {
+    width: 500px;
+    height: 500px;
+    grid-column: 6/10;
+    grid-row: 6/10;
+}
+.container {
+	display: grid;
+    grid-template-columns: repeat(10, auto);
+    grid-template-rows: repeat(10, auto);
+}
+.imageitself {
+	max-width: 100%;
+    max-height: 100%;
+}
+body {
   
   background-color: black;
   /* text color*/
@@ -162,12 +181,17 @@ a:hover {
 
 [[Hmm? What&#39;s that up on the stage?]]</tw-passagedata><tw-passagedata pid="3" name="Hmm? What&#39;s that up on the stage?" tags="" position="807,309" size="100,100">Looks like one of the exhibited paintings has been left here. That&#39;s unusual. The professor is quite particular about keeping the art pieces hidden when they&#39;re not needed.
 
-[[I should take a closer look...]]</tw-passagedata><tw-passagedata pid="4" name="I should take a closer look..." tags="" position="807,459" size="100,100">This is weird. It looks like it&#39;s a painting of the suburb I live in! There&#39;s nothing striking about it though. That&#39;s an odd thing to paint. 
+[[I should take a closer look...]]</tw-passagedata><tw-passagedata pid="4" name="I should take a closer look..." tags="" position="807,459" size="100,100">&lt;div class = &quot;container&quot;&gt;
+&lt;div class = &quot;text&quot;&gt;
+This is weird. It looks like it&#39;s a painting of the suburb I live in! There&#39;s nothing striking about it though. That&#39;s an odd thing to paint. 
 
 The piece is tilted to the left. The professor has told me to never touch the paintings, but I feel like straightening it would be the right thing to do...
 
 [[Straighten the painting.]]
-[[Leave it alone.]]</tw-passagedata><tw-passagedata pid="5" name="Straighten the painting." tags="" position="732,609" size="100,100">There, that&#39;s be-
+[[Leave it alone.]]
+&lt;/div&gt;
+&lt;div class =&quot;imagex&quot;&gt;&lt;img src=&quot;assets/images/paintingcrooked.png&quot; class=&quot;imageitself&quot;/&gt;&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="Straighten the painting." tags="" position="732,609" size="100,100">There, that&#39;s be-
 
 I feel a sudden dizziness. It&#39;s like the world had just turned upside down. I balance myself by grasping the nearby curtain. 
 
@@ -704,7 +728,7 @@ She starts smoking.
 
 &quot;Well, thanks a lot for taking a walk with me. It was nice talking to someone so young and dashing.&quot; 
 
-[[Say your goodbyes and leave.]]</tw-passagedata><tw-passagedata pid="70" name="Say your goodbyes and leave." tags="code" position="1083,6931.666666666667" size="100,100">
+[[Say your goodbyes and leave.]]</tw-passagedata><tw-passagedata pid="70" name="Say your goodbyes and leave." tags="code" position="1083,6931" size="100,100">
 &lt;&lt;if $infotrigger is true&gt;&gt;
   The feeling that she knows more than she lets on returns to me. I turn around, but she&#39;s already gone.
 
@@ -829,7 +853,7 @@ It was worth a shot.
 
 Why am I listening to this scumbag? 
 
-[[&quot;And what are you?&quot;]]</tw-passagedata><tw-passagedata pid="87" name="&quot;And what are you?&quot;" tags="code" position="990,8689.333333333334" size="100,100">&quot;I&#39;m a pigeon, buddy!&quot;
+[[&quot;And what are you?&quot;]]</tw-passagedata><tw-passagedata pid="87" name="&quot;And what are you?&quot;" tags="code" position="990,8689" size="100,100">&quot;I&#39;m a pigeon, buddy!&quot;
 
 The bird flies away.
 
@@ -876,7 +900,7 @@ I push the incident away from my mind for now. I&#39;ve got a more pressing issu
 [[Take a walk to cool my head.]]
 
 &lt;&lt;set $police to true&gt;&gt;
-</tw-passagedata><tw-passagedata pid="92" name="When I came back home and Johnny was there." tags="code" position="1411.6666666666667,9574.666666666666" size="100,100">That&#39;s the main issue here. A stranger was living in my home when I got there. There was something off about Johnny...
+</tw-passagedata><tw-passagedata pid="92" name="When I came back home and Johnny was there." tags="code" position="1411,9574" size="100,100">That&#39;s the main issue here. A stranger was living in my home when I got there. There was something off about Johnny...
 
 &lt;&lt;if $johnny is true&gt;&gt;
   He was definitely acting like he owned the place. But that can&#39;t be right. And then there was the episode in the cellar... I&#39;m not sure what to make of him. 
@@ -1001,7 +1025,7 @@ Or maybe the police are just gone somehow.
 
 [[I think that&#39;s all.]]
 
-&lt;&lt;set $deduction to $deduction +1&gt;&gt;</tw-passagedata><tw-passagedata pid="110" name="I think that&#39;s all." tags="code" position="1459.6666666666667,11192" size="100,100">&lt;&lt;if $deduction gte 5&gt;&gt;
+&lt;&lt;set $deduction to $deduction +1&gt;&gt;</tw-passagedata><tw-passagedata pid="110" name="I think that&#39;s all." tags="code" position="1459,11192" size="100,100">&lt;&lt;if $deduction gte 5&gt;&gt;
   I feel like I&#39;m starting to see the whole picture. Now I need to choose what to do.
 
   [[Go home.]]
