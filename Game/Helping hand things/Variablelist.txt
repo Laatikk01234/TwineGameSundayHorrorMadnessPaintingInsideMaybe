@@ -49,5 +49,5 @@ assets/images/painting.png
 <div class = "text">
 
 </div>
-<div class ="imagex"><img src="assets/images/pigeon.png" class="imageitself"/></div>
+<div class ="imagex"><img src="assets/images/johnnyabcd.png" class="imageitself"/></div>
 </div>
