@@ -40,12 +40,14 @@ assets/images/painting.png
 
 <div class = "container">
 <div class = "text">
-This is weird. It looks like it's a painting of the suburb I live in! There's nothing striking about it though. That's an odd thing to paint. 
 
-The piece is tilted to the left. The professor has told me to never touch the paintings, but I feel like straightening it would be the right thing to do...
-
-[[Straighten the painting.]]
-[[Leave it alone.]]
 </div>
-<div class ="imagex"><img src="" class="imageitself"/></div>
+<div class ="imagex"><img src="assets/images/" class="imageitself"/></div>
+</div>
+
+<div class = "container">
+<div class = "text">
+
+</div>
+<div class ="imagex"><img src="assets/images/pigeon.png" class="imageitself"/></div>
 </div>
