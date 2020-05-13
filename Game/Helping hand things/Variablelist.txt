@@ -49,15 +49,16 @@ assets/images/painting.png
 <div class = "text">
 
 </div>
-<div class ="imagex"><img src="assets/images/paintingend.png" class="imageitself"/></div>
+<div class ="imagex"><img src="assets/images/johnnyabcd.png" class="imageitself"/></div>
 </div>
 
 
 
-
-
-
-
+<<audio ":playing" stop>>
+<<audio "" stop>>
+<<audio "" play>>
+<<audio "" loop volume 0 fadein>>
+<<audio "" stop>>
 
 
 
