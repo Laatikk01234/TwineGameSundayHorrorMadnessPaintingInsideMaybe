@@ -166,7 +166,7 @@ a:hover {
 */
 
 /* opacity */
-/* transition: 2s all ease * /</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="BackToTheFuture" color="gray"></tw-tag>,<tw-tag name="Ending" color="red"></tw-tag>,<tw-tag name="code" color="blue"></tw-tag>,<tw-tag name="ending" color="red"></tw-tag><tw-passagedata pid="1" name="Main Menu" tags="code" position="809,6" size="100,100">&lt;div class = &quot;container&quot;&gt;
+/* transition: 2s all ease * /</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="BackToTheFuture" color="gray"></tw-tag>,<tw-tag name="Ending" color="red"></tw-tag>,<tw-tag name="code" color="blue"></tw-tag>,<tw-tag name="ending" color="red"></tw-tag><tw-passagedata pid="1" name="Main Menu" tags="code" position="809,4.333333333333333" size="100,100">&lt;div class = &quot;container&quot;&gt;
 &lt;div class = &quot;text&quot;&gt;	
 		
 		
@@ -441,7 +441,7 @@ After some fiddling, I realize that there must be a problem with the pipes in th
   [[Go to the cellar.]]
 &lt;/div&gt;
 &lt;div class =&quot;imagex&quot;&gt;&lt;img src=&quot;assets/images/johnnyabcd.png&quot; class=&quot;imageitself&quot;/&gt;&lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name="Go to the cellar." tags="" position="505,3006" size="100,100">&lt;div class = &quot;container&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name="Go to the cellar." tags="" position="505,3007.6666666666665" size="100,100">&lt;div class = &quot;container&quot;&gt;
 &lt;div class = &quot;text&quot;&gt;
   It&#39;s dark and cramped, but with my flashlight and knowledge of the stone staircase&#39;s broken steps, climbing down is easy. Johnny follows me down. 
 
@@ -1250,6 +1250,7 @@ That was a talking bird. Am I going insane? No, that wasn&#39;t the only weird t
 &lt;&lt;set $leftafterpigeonspoke to false&gt;&gt;
 &lt;&lt;set $deduction to 0&gt;&gt;
 &lt;&lt;set $police to false&gt;&gt;
+&lt;&lt;set $roundone to false&gt;&gt;
 
 &lt;&lt;cacheaudio &quot;theme&quot; &quot;assets/audio/Theme.ogg&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;deduction&quot; &quot;assets/audio/Deduction.ogg&quot;&gt;&gt;
@@ -1678,7 +1679,10 @@ Up there, on the stage, is my objective.
 &lt;/div&gt;
 
 
-&lt;&lt;audio &quot;deduction&quot; loop volume 0 fadein&gt;&gt;</tw-passagedata><tw-passagedata pid="128" name="&quot;What exactly are you?&quot;" tags="" position="765,13957" size="100,100">&lt;div class = &quot;container&quot;&gt;
+&lt;&lt;if $roundone is false&gt;&gt;
+	&lt;&lt;audio &quot;deduction&quot; loop volume 0 fadein&gt;&gt;
+	&lt;&lt;set $roundone to true&gt;&gt;
+&lt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="128" name="&quot;What exactly are you?&quot;" tags="" position="765,13957" size="100,100">&lt;div class = &quot;container&quot;&gt;
 &lt;div class = &quot;text&quot;&gt;
   &quot;Ooh, you&#39;re interested in me? I&#39;m flattered!&quot;
 
@@ -2095,13 +2099,14 @@ Should I return to Johnny or go elsewhere?
   [[&quot;Get out of my house.&quot;]]
 &lt;/div&gt;
 &lt;div class =&quot;imagex&quot;&gt;&lt;img src=&quot;assets/images/johnnyabcd.png&quot; class=&quot;imageitself&quot;/&gt;&lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="156" name="&quot;Get out of my house.&quot;" tags="" position="1924,11731" size="100,100">&lt;div class = &quot;container&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="156" name="&quot;Get out of my house.&quot;" tags="" position="1922.3333333333333,11729.333333333334" size="100,100">&lt;div class = &quot;container&quot;&gt;
+&lt;div class = &quot;text&quot;&gt;
   &quot;That&#39;s a tall order, considering how this is my house, not yours.&quot;
 
   I grasp the crowbar tightly.
 
   [[&quot;Last warning. Out!&quot;]]
-  [[Hit Johnny with the crowbar.]]&lt;div class = &quot;text&quot;&gt;
+  [[Hit Johnny with the crowbar.]]
 &lt;/div&gt;
 &lt;div class =&quot;imagex&quot;&gt;&lt;img src=&quot;assets/images/johnnyabcd.png&quot; class=&quot;imageitself&quot;/&gt;&lt;/div&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="157" name="&quot;Last warning. Out!&quot;" tags="" position="1841,11869" size="100,100">&lt;div class = &quot;container&quot;&gt;
@@ -2129,7 +2134,7 @@ Should I return to Johnny or go elsewhere?
   [[Charge at him.]]
 &lt;/div&gt;
 &lt;div class =&quot;imagex&quot;&gt;&lt;img src=&quot;assets/images/johnnyabcd.png&quot; class=&quot;imageitself&quot;/&gt;&lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="159" name="Charge at him." tags="" position="1922,12175" size="100,100">&lt;div class = &quot;container&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="159" name="Charge at him." tags="" position="1923.6666666666667,12175" size="100,100">&lt;div class = &quot;container&quot;&gt;
 &lt;div class = &quot;text&quot;&gt;
   A hit... no, a miss. Again.
 

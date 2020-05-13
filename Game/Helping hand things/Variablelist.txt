@@ -10,7 +10,7 @@ variables
 <<set $leftafterpigeonspoke to false>>
 <<set $deduction to 0>>
 <<set $police to false>>
-
+<<set $roundone to false>>
 <<if $infotrigger is true>>
 <<else>>
 <</if>>
