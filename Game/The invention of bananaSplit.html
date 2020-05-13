@@ -101,19 +101,20 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
 	<tw-storydata name="The invention of bananaSplit" startnode="1" creator="Twine" creator-version="2.3.7" ifid="3AFB318F-3318-46AC-A0A4-9C1DE0142B64" zoom="0.6" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.text{
-    grid-column: 1/5;
-    grid-row: 1/9;
+    grid-column: 1/6;
+    grid-row: 1/11;
 }
 .imagex {
     width: 500px;
     height: 500px;
     grid-column: 6/10;
-    grid-row: 6/10;
+    grid-row: 7/11;
 }
 .container {
 	display: grid;
     grid-template-columns: repeat(10, auto);
     grid-template-rows: repeat(10, auto);
+  	min-height: 800px;
 }
 .imageitself {
 	max-width: 100%;
@@ -397,7 +398,9 @@ I stash the knife in the inner pocket of my overalls. It should be well-hidden.
 &lt;div class =&quot;imagex&quot;&gt;&lt;img src=&quot;assets/images/johnnyabcd.png&quot; class=&quot;imageitself&quot;/&gt;&lt;/div&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name="&quot;You live alone, then?&quot;" tags="" position="505,2556" size="100,100">&lt;div class = &quot;container&quot;&gt;
 &lt;div class = &quot;text&quot;&gt;
-  &quot;Yeah, I&#39;m a bachelor for life. Everything&#39;s easier when you only need to worry about yourself, you dig?&quot;
+  Johnny seems uneasy.
+
+  &quot;Yeah, I&#39;m a bachelor for life. Well, I had a partner way back when. But that life ain&#39;t for me.&quot;
 
   We reach the bathroom.
 
@@ -681,7 +684,9 @@ I sit on a nearby bench. It&#39;s time to eat my salad.
 
 The park is serene. There are no people around, and everything feels normal. This is the same park I&#39;ve been walking in for many years.
 
-The boxed salad is half-eaten when a pigeon struts near me. I sense that there&#39;s something peculiar in its movement.
+Eating feels wonderful. I might actually have the brain power to thoroughly consider my situation and how to get out of it.
+
+The salad is half-eaten when a pigeon struts near me. I sense that there&#39;s something peculiar in its movement.
 
 [[Throw a seed from the salad in front of it.]]
 [[Look at it closely.]]
@@ -912,7 +917,7 @@ I get creeped out.
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="66" name="Walk her home." tags="code" position="689,6388" size="100,100">&lt;div class = &quot;container&quot;&gt;
 &lt;div class = &quot;text&quot;&gt;
   &lt;&lt;if $cigarettes is true&gt;&gt;
-	When we get to her door, Gemma takes two cigarettes from the pack she got from the store and hands one of them to me.
+	When we get to her door, Gemma takes two cigarettes from the pack she got from the store and hand one of them to me.
 
 	&quot;Do you smoke? These Warlboros are pretty good.&quot;
 
@@ -1231,14 +1236,13 @@ Still doesn&#39;t explain why I couldn&#39;t call 911. Damn.
 &lt;&lt;if $johnny is true&gt;&gt;
   He was definitely acting like he owned the place. But that can&#39;t be right. And then there was the episode in the cellar... I&#39;m not sure what to make of him. 
 
-  I feel that the important thing here is whether he&#39;s actually been living there instead of me.
+  I feel that an important thing here is whether he&#39;s actually been living there instead of me.
 
   [[I think he&#39;s actually living there.]]
   [[I think he&#39;s staged the situation after breaking in there.]]
 
 
 &lt;&lt;else&gt;&gt;
-But I didn&#39;t find out anything important during our short encounter.
 
   [[I then visited the store.]]
 
@@ -1303,6 +1307,7 @@ I&#39;m not so sure about that...
 &lt;&lt;else&gt;&gt;
   I just ate my salad. Nothing peculiar there.
 
+  if left after talk pigeon
 &lt;&lt;if $leftafterpigeonspoke is true&gt;&gt;
   There was a talking, foul-mouthed pigeon. That was really weird. Birds aren&#39;t supposed to talk, so what&#39;s going on? Maybe I&#39;ve gone crazy.
 &lt;&lt;/if&gt;&gt;
@@ -1324,9 +1329,7 @@ The connection is not strong, but I think they both were serious when talking ab
   [[I can&#39;t reach the police.]]
 
 &lt;&lt;else&gt;&gt;
-  Hmm... 
-  
-  Nothing else comes to mind. The evening has made a mess of my thoughts, but I can&#39;t think of anything major that I missed. 
+  Nothing else comes to mind. 
 
   [[I think that&#39;s all.]]
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="105" name="That I&#39;m trapped." tags="code" position="1253,10622" size="100,100">Right. I think it meant that I&#39;m trapped in a metaphysical sense, since it feels like I can move around the streets normally.
@@ -1357,8 +1360,6 @@ Or maybe the police are just gone somehow.
 
 &lt;&lt;set $deduction to $deduction +1&gt;&gt;</tw-passagedata><tw-passagedata pid="110" name="I think that&#39;s all." tags="code" position="1459,11190" size="100,100">&lt;&lt;if $deduction gte 5&gt;&gt;
   I feel like I&#39;m starting to see the whole picture. Now I need to act.
-  
-  I think I should try going home once more. I&#39;m sure Johnny is still there and I should try talking this out with him one more time. If I&#39;m right, he should have all the answers. The question is whether he&#39;s willing to talk.
 
   [[Go home.]]
 
@@ -1383,10 +1384,16 @@ Since this isn&#39;t reality... I&#39;m not responsible for my actions. The acti
 I arrive at my van. I take a crowbar from the back with me as I approach the house.
 
 [[Knock on the door.-&gt;Knock on home door.]]
-</tw-passagedata><tw-passagedata pid="112" name="Go home." tags="" position="983,11446" size="100,100">  I get to my door and knock on it. After a few seconds, a familiar face appears.
+</tw-passagedata><tw-passagedata pid="112" name="Go home." tags="" position="983,11446" size="100,100">&lt;div class = &quot;container&quot;&gt;
+&lt;div class = &quot;text&quot;&gt;
+  I think I should try going home again. It might not work, but at least Johnny is there. I think I should try talking this out with him one more time.
+
+  I get to my door and knock on it. After a few seconds, a familiar face appears.
 
   [[&quot;Hey there.&quot;]]
-</tw-passagedata><tw-passagedata pid="113" name="&quot;Hey there.&quot;" tags="" position="982,11593" size="100,100">&lt;div class = &quot;container&quot;&gt;
+&lt;/div&gt;
+&lt;div class =&quot;imagex&quot;&gt;&lt;img src=&quot;assets/images/johnnyabcd.png&quot; class=&quot;imageitself&quot;/&gt;&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="113" name="&quot;Hey there.&quot;" tags="" position="982,11593" size="100,100">&lt;div class = &quot;container&quot;&gt;
 &lt;div class = &quot;text&quot;&gt;
   &quot;Hey, buddy! Back so soon? Did you figure things out already?&quot;
 
@@ -1497,13 +1504,13 @@ I feel disconnected from reality. Then again, maybe this isn&#39;t reality at al
 
 Disturbing thoughts enter my head. If this isn&#39;t real, can I even die? Should I... try it? I glance at the broken shards of a glass bottle.
 
-No, of course not! Why would I think something like that? I need to stay focused.
+No! I need to stay focused.
 
 Stay sane.
 
 Stay sane.
 
-I take a turn in the alley. In front of me is a corpse of an old lady.
+I take a turn in the alley. In front of me is the corpse of an old lady.
 
 &lt;&lt;if $gemma is true&gt;&gt;
 [[&quot;Gemma...?&quot;]]
@@ -1522,15 +1529,13 @@ I run past the corpse. It feels wrong, but I&#39;m absolutely terrified. I might
 
 After a few more turns, I finally reach a familiar plaza. The auction house is at the middle. But there&#39;s much more.
 
-[[Oh no...]]</tw-passagedata><tw-passagedata pid="122" name="Oh no..." tags="" position="1253,13063.666666666666" size="100,100">The plaza is swarming with people. They are all stiff, standing there looking at the auction house. They form an orderly ring around it with no gaps. There must be thousands of them. And they&#39;re...
+[[Oh no...]]</tw-passagedata><tw-passagedata pid="122" name="Oh no..." tags="" position="1253,13062" size="100,100">The plaza is swarming with people. They are all stiff, standing there looking at the auction house. They form an orderly ring around it with no gaps. There must be thousands of them. And they&#39;re...
 
 They&#39;re a bunch of Johnnies and Gemmas! At least that&#39;s what they look like at first glance. The physical appearance is the same, but... There&#39;s something very, very wrong about them.
 
 There&#39;s also a pigeon flying in circles overhead.
 
-I almost run back to the alley instinctively until I remember the corpse in there. 
-
-I&#39;ve come so far. Quitting at this point would make all my suffering pointless.
+I almost run back to the alley instinctively until I remember the corpse in there.  
 
 My head&#39;s spinning. I&#39;ve been through so much today, it feels like I&#39;m going to burst. 
 
@@ -1609,8 +1614,8 @@ Up there, on the stage, is my objective.
   [[&quot;Why are you doing this?&quot;]]
   [[&quot;Who are the other people?&quot;]]
   [[&quot;What is this place?&quot;]]
-  [[&quot;What happens if you&#39;re destroyed?&quot;]]
-  [[&quot;Are you letting me leave now?&quot;]]
+  [[&quot;What happens to you if the painting is destroyed?&quot;]]
+  [[&quot;Why aren&#39;t you keeping me trapped any longer?&quot;]]
   [[&quot;How could you toy with me like that?&quot;]]
   [[&quot;No more questions.&quot;]]
 &lt;/div&gt;
@@ -1623,7 +1628,7 @@ Up there, on the stage, is my objective.
 
   &quot;I&#39;m a magical painting, but I suppose that&#39;s obvious by now. I was painted... hmmm... a week ago, maybe? It&#39;s really hard to keep track of time, what with the parallel worlds and all that.&quot;
 
-  &quot;I was born, or created, with the special ability to see into souls and trap them inside me. Pretty cool, huh? Oh, but please don&#39;t give credit to my painter. I don&#39;t think this was intended.&quot;
+  &quot;I was born, or created, with the special ability to see into souls and put them inside me. Pretty cool, huh? Oh, but please don&#39;t give credit to my painter. I don&#39;t think this was intended.&quot;
 
   [[&quot;What happened to the painter?&quot;]]
 &lt;/div&gt;
@@ -1654,8 +1659,6 @@ Up there, on the stage, is my objective.
   Is this thing serious? I&#39;m amazed I&#39;m still sane after all of that.
 
   &quot;You were also very interesting. There&#39;s just something about your soul... I figured we could learn from each other.&quot;
-  
-  What does it mean by that? I&#39;m pretty much the most boring person alive. If I can be considered alive at this point...
 
   [[Ask another question.]]
 &lt;/div&gt;
@@ -1697,7 +1700,7 @@ Up there, on the stage, is my objective.
 
   I do like my home and the neighborhood a lot. Maybe people see what they treasure the most?
 
-  &quot;As for how I construct the world... a soul contains lots of information if you know where to look. And for parts I don&#39;t really care about, I just fill them in with something that&#39;s close enough.&quot;
+  &quot;As for how I construct the world... a soul contains lots of information if you know where to look. And for parts I&#39;m not sure about, I just fill them in with something that&#39;s close enough.&quot;
 
   I remember the clerk I wasn&#39;t familiar with. And some other things...
 
@@ -1708,7 +1711,7 @@ Up there, on the stage, is my objective.
 &lt;div class =&quot;imagex&quot;&gt;&lt;img src=&quot;assets/images/paintingend.png&quot; class=&quot;imageitself&quot;/&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-</tw-passagedata><tw-passagedata pid="133" name="&quot;What happens if you&#39;re destroyed?&quot;" tags="" position="1542,13973" size="100,100">&lt;div class = &quot;container&quot;&gt;
+</tw-passagedata><tw-passagedata pid="133" name="&quot;What happens to you if the painting is destroyed?&quot;" tags="" position="1542,13973" size="100,100">&lt;div class = &quot;container&quot;&gt;
 &lt;div class = &quot;text&quot;&gt;
   &quot;You mean in the real world? Well, probably the same thing that happens to humans when they die. Is there life after death? Who knows.&quot;
 
@@ -1721,7 +1724,7 @@ Up there, on the stage, is my objective.
   [[Ask another question.]]
 &lt;/div&gt;
 &lt;div class =&quot;imagex&quot;&gt;&lt;img src=&quot;assets/images/paintingend.png&quot; class=&quot;imageitself&quot;/&gt;&lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="134" name="&quot;Are you letting me leave now?&quot;" tags="" position="1685.3333333333333,13976.333333333334" size="100,100">&lt;div class = &quot;container&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="134" name="&quot;Why aren&#39;t you keeping me trapped any longer?&quot;" tags="" position="1692,13983" size="100,100">&lt;div class = &quot;container&quot;&gt;
 &lt;div class = &quot;text&quot;&gt;
   &quot;Well, you&#39;ve been through a lot in a short span of time. I think you&#39;ll soon be at your limit. I don&#39;t want to spoil your soul with too much baggage.&quot;
 
@@ -1884,7 +1887,7 @@ I hear the painting talking.
 
 At the auction, there aren&#39;t many bidders, as the painter is rather unknown. Still, the few bidders bid high. Probably because everyone sees something personally important in the painting. It takes me back a few thousand dollars, but that&#39;s a small price to pay for something like this. 
 
-I carefully use my pliers when I move the painting to the van to bring it home. I hang it up on the wall to remind me of my crazy adventure.
+I explain my interest in the painting with the fact that I&#39;m living in the suburb. What&#39;s a bit harder to explain is the use of pliers when I move it to the van to bring it home. I hang it up on the wall to remind me of my crazy adventure.
 
 The very next day, I quit my job. It feels like the best decision I&#39;ve ever made.
 
@@ -1940,7 +1943,7 @@ Once I&#39;ve resigned, this unfortunate chapter of my life will finally end.
 
 I&#39;m free.
 
-[[FIN-&gt;Main Menu]]</tw-passagedata><tw-passagedata pid="151" name="&quot;H-hello?&quot;" tags="" position="1862,15472" size="100,100">&lt;div class = &quot;container&quot;&gt;
+[[FIN-&gt;Main Menu]]</tw-passagedata><tw-passagedata pid="151" name="&quot;H-hello?&quot;" tags="" position="1860,15472" size="100,100">&lt;div class = &quot;container&quot;&gt;
 &lt;div class = &quot;text&quot;&gt;
   It&#39;s the painting. We&#39;re having a conversation again. It seems to only be possible inside its world.
 
@@ -1960,7 +1963,7 @@ I&#39;m free.
   ...
   ...
 
-  And that&#39;s how my occasional trips down the rabbit hole started. The painting always let me leave whenever I wanted to, and was always happy when I visited. 
+  And that&#39;s how my occasional trips down the rabbit hole started. The painting always let me leave whenever I wanted to, and was always pleased when I visited. 
 
   I learned to forgive the painting eventually. It did cause me suffering, but the intention was not evil. The better I got to know it, the clearer it became that it really wanted to help me back then.
 
@@ -2012,10 +2015,9 @@ Should I return to Johnny or go elsewhere?
 
   So it can apologize. I take a deep breath.
 
-  &quot;You must have lots of questions. Or do you want to end this already?&quot;
+  &quot;You must have lots of questions. Or do you want to end this already? Oh! Maybe you want to stay here and play with me!&quot;
 
   [[Ask a question.-&gt;Ask another question.]]
-  [[&quot;I&#39;ve had enough of this.&quot;-&gt;&quot;No more questions.&quot;]]
 &lt;/div&gt;
 &lt;div class =&quot;imagex&quot;&gt;&lt;img src=&quot;assets/images/paintingend.png&quot; class=&quot;imageitself&quot;/&gt;&lt;/div&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="155" name="Knock on home door." tags="" position="1924,11581" size="100,100">After a while, Johnny opens the door.
@@ -2027,7 +2029,7 @@ Should I return to Johnny or go elsewhere?
 I grasp the crowbar tightly.
 
 [[&quot;Last warning. Out!&quot;]]
-[[Hit Johnny with the crowbar.]]</tw-passagedata><tw-passagedata pid="157" name="&quot;Last warning. Out!&quot;" tags="" position="1841,11871" size="100,100">Johnny looks at me confused. 
+[[Hit Johnny with the crowbar.]]</tw-passagedata><tw-passagedata pid="157" name="&quot;Last warning. Out!&quot;" tags="" position="1841,11869" size="100,100">Johnny looks at me confused. 
 
 &quot;You&#39;re serious, aren&#39;t you? Just take a deep breath...&quot;
 
