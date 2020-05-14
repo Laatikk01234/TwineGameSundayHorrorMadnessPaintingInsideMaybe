@@ -1315,11 +1315,18 @@ Ultimately, she seemed like a sweet lady. It was nice to connect with someone wh
 	[[They must be relatives.]]
 	[[They must be friends.]]
 	[[They both brought up my job.]]
+	&lt;&lt;else&gt;&gt;
+	[[Then I came to the park.]]
   &lt;&lt;/if&gt;&gt;
+  
 &lt;&lt;else&gt;&gt;
+
   I don&#39;t think I got any new information at the store, except that the clerk was different.
-&lt;&lt;/if&gt;&gt;
+
 [[Then I came to the park.]]
+&lt;&lt;/if&gt;&gt;
+
+
 </tw-passagedata><tw-passagedata pid="97" name="I&#39;ve travelled in time." tags="" position="1073,9877" size="100,100">Maybe I&#39;ve travelled in time, and this world in which Johnny is living in my house is the past or the future. 
 
 Then again, I don&#39;t really see too many differences in the suburb. The streets and the store felt normal...
@@ -1342,13 +1349,12 @@ I&#39;m not so sure about that...
   [[That I&#39;m trapped.]]
   [[That I&#39;m free as a bird.]]
   [[That I&#39;m going to die.]]
-
+  
+&lt;&lt;elseif $leftafterpigeonspoke is true&gt;&gt;
+  There was a talking, foul-mouthed pigeon. That was really weird. Birds aren&#39;t supposed to talk, so what&#39;s going on? Maybe I&#39;ve gone crazy.
+  [[Is that all?]]
 &lt;&lt;else&gt;&gt;
   I just ate my salad. Nothing peculiar there.
-  
-&lt;&lt;if $leftafterpigeonspoke is true&gt;&gt;
-  There was a talking, foul-mouthed pigeon. That was really weird. Birds aren&#39;t supposed to talk, so what&#39;s going on? Maybe I&#39;ve gone crazy.
-&lt;&lt;/if&gt;&gt;
   [[Is that all?]]
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="101" name="They must be relatives." tags="" position="1273,10227" size="100,100">Is that it? I don&#39;t really have any evidence of that...
 
@@ -2236,7 +2242,7 @@ As the ridiculous scene continues, my mind begins to lose its edge. I start hitt
 
 [[FIN-&gt;Main Menu]]
 
-&lt;&lt;audio &quot;:playing&quot; fadeout&gt;&gt;</tw-passagedata><tw-passagedata pid="170" name="Go tell Johnny that you&#39;ll get the necessary tools from the van." tags="" position="904.3333333333333,1859.3333333333333" size="100,100">&lt;div class = &quot;container&quot;&gt;
+&lt;&lt;audio &quot;:playing&quot; fadeout&gt;&gt;</tw-passagedata><tw-passagedata pid="170" name="Go tell Johnny that you&#39;ll get the necessary tools from the van." tags="" position="904,1859" size="100,100">&lt;div class = &quot;container&quot;&gt;
 &lt;div class = &quot;text&quot;&gt;
 I&#39;ve been away for about 10 minutes. Johnny quickly opens the door when I knock.
 
